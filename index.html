@@ -4,7 +4,7 @@
 <!--[if (gte IE 10)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>Main Page | Terabyte Interactive</title>
+	<title>Lydia Bae</title>
 	<meta name="author" content="Terabyte | www.terabyte.co.nz" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<link rel="author" href="/humans.txt" />
@@ -18,9 +18,9 @@
 	<!--[if (lt IE 9) & (!IEMobile)]>
 		<link rel="stylesheet" href="/content/css/style-fixed.css" />
 	<![endif]-->
-	<script src="/content/scripts/dist/lib/modernizr.dev.custom.js"></script>
-	<script src="/content/scripts/dist/lib/require.js"></script>
-	<script src="/content/scripts/dist/lib/jquery-1.10.2.js"></script>
+	<script src="/content/scripts/src/lib/modernizr.dev.custom.js"></script>
+	<script src="/content/scripts/src/lib/require.js"></script>
+	<script src="/content/scripts/src/lib/jquery-1.10.2.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.inuit__menu a').click(function(){
@@ -582,15 +582,15 @@
 <!-- / contact -->
 	<!-- Footer Styles -->
 
-	<script src="/content/scripts/dist/paths.js"></script>
+	<script src="/content/scripts/src/paths.js"></script>
 <script>
 	//var mainPath = requirejs.s.contexts._.config.paths['main'] || 'main';
 	//var mainFileName = mainPath.substr(mainPath.indexOf('main'), mainPath.length);
-	//var mainUrl = '/content/scripts/dist/' + mainFileName + '.js';
+	//var mainUrl = '/content/scripts/src/' + mainFileName + '.js';
 	require.config({
-		baseUrl: "/content/scripts/dist/lib"
+		baseUrl: "/content/scripts/src/lib"
 	});
-	require(["/content/scripts/dist/main.js"], function () {
+	require(["/content/scripts/src/main.js"], function () {
 		require(["app/page/all"]);
 	});
 </script>
