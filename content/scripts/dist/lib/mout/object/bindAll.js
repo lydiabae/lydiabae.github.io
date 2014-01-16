@@ -1,0 +1,1 @@
+define(["./functions","../function/bind","../array/forEach"],function(e,t,n){function r(r,i){var s=arguments.length>1?Array.prototype.slice.call(arguments,1):e(r);n(s,function(e){r[e]=t(r[e],r)})}return r});

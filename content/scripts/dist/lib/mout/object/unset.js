@@ -1,0 +1,1 @@
+define(["./has"],function(e){function t(t,n){if(e(t,n)){var r=n.split("."),i=r.pop();while(n=r.shift())t=t[n];return delete t[i]}return!0}return t});

@@ -1,0 +1,1 @@
+define(["../object/forOwn"],function(e){function t(t){var n=[];return e(t,function(e,t){n.push(t+"="+encodeURIComponent(e))}),n.length?"?"+n.join("&"):""}return t});

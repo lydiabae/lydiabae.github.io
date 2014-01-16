@@ -1,0 +1,1 @@
+define([],function(){function e(e){e=e.replace(/#.*/,"");var t=/\?[a-zA-Z0-9\=\&\%\$\-\_\.\+\!\*\'\(\)\,]+/.exec(e);return t?decodeURIComponent(t[0]):""}return e});

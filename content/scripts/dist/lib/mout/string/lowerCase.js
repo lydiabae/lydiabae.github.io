@@ -1,0 +1,1 @@
+define(["../lang/toString"],function(e){function t(t){return t=e(t),t.toLowerCase()}return t});

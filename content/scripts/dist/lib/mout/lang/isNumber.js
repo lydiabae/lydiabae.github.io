@@ -1,0 +1,1 @@
+define(["./isKind"],function(e){function t(t){return e(t,"Number")}return t});

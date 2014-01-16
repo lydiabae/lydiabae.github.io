@@ -1,0 +1,1 @@
+define(["./forEach","../function/makeIterator_"],function(e,t){function n(e,n,r){n=t(n,r);var i=[];if(e==null)return i;var s=-1,o=e.length,u;while(++s<o)u=e[s],n(u,s,e)&&i.push(u);return i}return n});

@@ -1,0 +1,1 @@
+define(["jquery","tabbery"],function(e){var t,n;return{init:function(){t=this,n=e(".js-tabbery"),n.tabbery({showClass:".is-selected",tabMenu:".js-tabbery__menu",tabMenuItem:"a",tabContent:".js-tabbery__body"})}}});

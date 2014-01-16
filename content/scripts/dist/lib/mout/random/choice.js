@@ -1,0 +1,1 @@
+define(["./randInt","../lang/isArray"],function(e,t){function n(n){var r=arguments.length===1&&t(n)?n:arguments;return r[e(0,r.length-1)]}return n});

@@ -1,0 +1,1 @@
+define([],function(){function e(e,t){var n=Math.pow(10,t);return+(Math.round(e*n)/n).toFixed(t)}return e});

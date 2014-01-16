@@ -1,0 +1,1 @@
+define(["../lang/toString"],function(e){function t(t){return t=e(t),t.replace(/\\u[0-9a-f]{4}/g,function(e){var t=parseInt(e.slice(2),16);return String.fromCharCode(t)})}return t});

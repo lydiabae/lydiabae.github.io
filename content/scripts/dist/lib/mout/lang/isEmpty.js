@@ -1,0 +1,1 @@
+define(["../object/forOwn","./isArray"],function(e,t){function n(n){if(n==null)return!1;if(typeof n=="string"||t(n))return!n.length;if(typeof n=="object"||typeof n=="function"){var r=!0;return e(n,function(){return r=!1,!1}),r}return!1}return n});

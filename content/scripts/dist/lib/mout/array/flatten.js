@@ -1,0 +1,1 @@
+define(["../lang/isArray","./append"],function(e,t){function n(r,i,s){if(r==null)return i;if(s===0)return t(i,r),i;var o,u=-1,a=r.length;while(++u<a)o=r[u],e(o)?n(o,i,s-1):i.push(o);return i}function r(e,t){return t=t==null?-1:t,n(e,[],t)}return r});

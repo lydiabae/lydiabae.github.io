@@ -1,0 +1,1 @@
+define(["../lang/toString"],function(e){function t(t,n){return t=e(t),n=e(n),t.indexOf(n,t.length-n.length)!==-1}return t});

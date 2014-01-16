@@ -1,0 +1,1 @@
+define(["../lang/toString","../lang/toArray"],function(e,t){function n(n,r,i){n=e(n),r=t(r),i=t(i);var s=r.length,o=i.length;if(o!==1&&s!==o)throw new Error("Unequal number of searches and replacements");var u=-1;while(++u<s)n=n.replace(r[u],i[o===1?0:u]);return n}return n});

@@ -1,0 +1,1 @@
+define([],function(){function e(e,t){return e>>t|e<<32-t}return e});

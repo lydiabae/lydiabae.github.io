@@ -1,0 +1,1 @@
+define(["./forOwn","../function/makeIterator_"],function(e,t){function n(n,r,i){r=t(r,i);var s={};return e(n,function(e,t,n){s[t]=r(e,t,n)}),s}return n});

@@ -1,0 +1,1 @@
+define(["../lang/toString"],function(e){function n(n,r,i){n=e(n);var s=function(t,n){return n in r?e(r[n]):""};return n.replace(i||t,s)}var t=/\{\{(\w+)\}\}/g;return n});

@@ -1,0 +1,1 @@
+define(["./hasOwn","./forIn"],function(e,t){function n(n,r,i){t(n,function(t,s){if(e(n,s))return r.call(i,n[s],s,n)})}return n});

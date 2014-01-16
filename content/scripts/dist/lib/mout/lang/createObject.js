@@ -1,0 +1,1 @@
+define(["../object/mixIn"],function(e){function t(t,n){function r(){}return r.prototype=t,e(new r,n)}return t});

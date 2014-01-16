@@ -1,0 +1,1 @@
+define(["./enforcePrecision"],function(e){function n(n,r,i){r=r!=null?r:1,i=i||t,n=e(n,r);var s,o;return n<1e6?(o=e(n/1e3,r),s=o<1e3?o+i.thousand:1+i.million):n<1e9?(o=e(n/1e6,r),s=o<1e3?o+i.million:1+i.billion):s=e(n/1e9,r)+i.billion,s}var t={thousand:"K",million:"M",billion:"B"};return n});

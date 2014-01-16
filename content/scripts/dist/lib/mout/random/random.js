@@ -1,0 +1,1 @@
+define([],function(){function e(){return e.get()}return e.get=Math.random,e});

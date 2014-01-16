@@ -1,0 +1,1 @@
+define([],function(){function e(e,t,n,r){t=t==null?2:t,n=n==null?".":n,r=r==null?",":r;var i=e.toFixed(t),s=(new RegExp("^(-?\\d{1,3})((?:\\d{3})+)(\\.(\\d{"+t+"}))?$")).exec(i);return s?s[1]+s[2].replace(/\d{3}/g,r+"$&")+(s[4]?n+s[4]:""):i.replace(".",n)}return e});

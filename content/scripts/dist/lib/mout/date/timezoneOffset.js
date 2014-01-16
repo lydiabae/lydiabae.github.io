@@ -1,0 +1,1 @@
+define(["../number/pad"],function(e){function t(t){var n=t.getTimezoneOffset(),r=Math.abs(n),i=e(Math.floor(r/60),2),s=e(r%60,2);return(n>0?"-":"+")+i+s}return t});

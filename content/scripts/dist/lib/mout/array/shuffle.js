@@ -1,0 +1,1 @@
+define(["../random/randInt","./forEach"],function(e,t){function n(t){var n=[],r;if(t==null)return n;var i=-1,s=t.length,o;while(++i<s)i?(r=e(0,i),n[i]=n[r],n[r]=t[i]):n[0]=t[0];return n}return n});

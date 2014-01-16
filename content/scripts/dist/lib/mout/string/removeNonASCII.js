@@ -1,0 +1,1 @@
+define(["../lang/toString"],function(e){function t(t){return t=e(t),t.replace(/[^\x20-\x7E]/g,"")}return t});

@@ -1,0 +1,1 @@
+define(["./is"],function(e){function t(t,n){return!e(t,n)}return t});

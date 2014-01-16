@@ -1,7 +1,598 @@
 <!DOCTYPE html>
-<html>
+<!--[if lte IE 8 ]>    <html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9 lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Main Page | Terabyte Interactive</title>
+	<meta name="author" content="Terabyte | www.terabyte.co.nz" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<link rel="author" href="/humans.txt" />
+	<link rel="shortcut icon" href="/content/images/interface/ico/favicon.ico" type="image/x-icon">
+	<link rel="author" href="/humans.txt" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
+	<!--[if (gt IE 8) | (IEMobile)]><!-->
+		<link rel="stylesheet" href="/content/css/style.css" />
+	<!--<![endif]-->
+	<!--[if (lt IE 9) & (!IEMobile)]>
+		<link rel="stylesheet" href="/content/css/style-fixed.css" />
+	<![endif]-->
+	<script src="/content/scripts/src/lib/modernizr.dev.custom.js"></script>
+	<script src="/content/scripts/src/lib/require.js"></script>
+	<script src="/content/scripts/src/lib/jquery-1.10.2.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.inuit__menu a').click(function(){
+				goToByScroll($(this).attr('href'));
+			return false;
+			});
+			$('.js-close-inuit-nav').click(function(){
+				$('.inuit__menu').hide();
+			});
+			function goToByScroll(id){
+				$('html,body').animate({scrollTop: $(""+id).offset().top -60},'slow');
+				console.log($(""+id).offset().top + 258);
+			}
+			$('.js-toggle').click(function(){
+				$(this).find('.dropdown__list').toggle();
+			});
+			$('.kitchen-sink').click(function(){
+				$('.dropdown__list').hide();
+			});
+		});
+	</script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<!-- Header Styles -->
+	<!-- Navigation -->
+<div class="navigation-container">
+	<div id="menu" class="navigation">
+		<ul>
+			<li><a class="" href="#skills">Skills</a></li>
+			<li><a class="logo-left" href="#projects">Projects</a></li>
+			<li><a class="logo-right" href="#experience">Experience</a></li>
+			<li><a class="" href="#contact">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<div class="master-wrapper">
+	<div class="grid text--center">
+
+		<div class="grid__item one-whole header">
+			<span class="logo iconf-logo_lydiabae">
+				<span class="iconf__text">Lydia Bae</span>
+			</span>
+			<a href="#menu" class="header__menu iconf-list js-menu-toggle">
+				<span class="iconf__text">Menu</span>
+			</a>
+		</div>
+
+		<!--
+		<div class="grid__item one-whole pod pod- -dark">
+			<img src="//placehold.it/1080x486/666/fff" alt="" />
+		</div>
+		-->
+
+		<div class="grid__item one-whole pod pod--padded pod--background pod-background--intro">
+			<h2 class="intro-heading"><span>Hi my name is</span><br/>Lydia Bae<br/><span>UX/UI Designer</span></h2>
+			<p class="kilo">I’m a passionate, innovative and creative digital designer who’s always interested in creating meaningful and beautiful web/digital experiences. Relocating to London from New Zealand, I’m currently looking for a fantastic job opportunity to work with awesome team who are passionate about the web and enjoy working on cool projects.</p>
+		</div>
+
+		<!-- skills -->
+		<div id="skills" class="grid__item one-whole pod pod--padded">
+			<h2 class="alpha">Skills</h2>
+			<hr/>
+			<p class="kilo">Lorem ipsum doon nisirabitur ultricies suscipit risus, quis pulvinar eros dapibus sit ameaesent fermerat eu dapibus feugiat</p>
+		</div>
+		<div class="grid__item one-whole pod pod--background pod-background--skills">
+			<div class="grid grid--even-pod-clear">
+				<!-- Pod Skill -->
+<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
+	<span class="pod--skill__image">
+		<img src="//placehold.it/500x500/000/fff" alt="" />
+	</span>
+	<h3>Information Architecture </h3>
+	<p>Pellentesque habitant morbi turpis egestas.</p>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
+	<span class="pod--skill__image">
+		<img src="//placehold.it/500x500/000/fff" alt="" />
+	</span>
+	<h3>Mobile/Web Applications</h3>
+	<p>Pellentesque habitant rpis egestas.</p>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
+	<span class="pod--skill__image">
+		<img src="//placehold.it/500x500/000/fff" alt="" />
+	</span>
+	<h3>Responsive Design</h3>
+	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
+	<span class="pod--skill__image">
+		<img src="//placehold.it/500x500/000/fff" alt="" />
+	</span>
+	<h3>User Experience</h3>
+	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
+	<span class="pod--skill__image">
+		<img src="//placehold.it/500x500/000/fff" alt="" />
+	</span>
+	<h3>User Interface</h3>
+	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
+	<span class="pod--skill__image">
+		<img src="//placehold.it/500x500/000/fff" alt="" />
+	</span>
+	<h3>Art Direction</h3>
+	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</div>
+			</div>
+		</div>
+		<!-- / skills -->
+
+		<!-- projects -->
+		<div id="projects" class="grid__item one-whole pod pod--padded">
+			<h2 class="alpha">Projects</h2>
+			<hr/>
+			<p class="kilo">Project lorem isum dolor</p>
+		</div>
+		<div class="grid__item projects-container pod js-projects-container pod--background pod-background--project">
+			<div class="grid">
+				<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
+	<div class="pod--project__thumbnail">
+		<img src="//placehold.it/400x300/888/fff&text=project" alt="" />
+		<h3> Christchurch Canterbury Tourism </h3>
+		<p> loreui sumd </p>
+	</div>
+	<div class="project-info">
+		<div class="project-info__padding">
+			<div class="grid">
+				<div class="project-info__content grid__item one-whole">
+					<h2>Christchurch Canterbury Tourism </h2>
+					<hr/>
+					<p>Client: client name</p>
+					<p>Role: Role played in project</p>
+					<blockquote class="project-info__quote">
+						<p class="mega">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> </br>
+						<cite>Person name,<small>Position</small></cite>
+					</blockquote>
+				</div>
+				<div class="project-info__image grid__item one-whole">
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
+	<div class="pod--project__thumbnail">
+		<img src="//placehold.it/400x300/888/fff&text=project" alt="" />
+		<h3> Auckland Sea Shuttles</h3>
+		<p> 2013</p>
+	</div>
+	<div class="project-info">
+		<div class="project-info__padding">
+			<div class="grid">
+				<div class="project-info__content grid__item one-whole">
+					<h2>Auckland Sea Shuttles</h2>
+					<hr/>
+					<p>Client: client name</p>
+					<p>Role: Role played in project</p>
+					<blockquote class="project-info__quote">
+						<p class="mega">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> </br>
+						<cite>Person name,<small>Position</small></cite>
+					</blockquote>
+				</div>
+				<div class="project-info__image grid__item one-whole">
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
+	<div class="pod--project__thumbnail">
+		<img src="//placehold.it/400x300/888/fff&text=project" alt="" />
+		<h3> Serko Mobile Application</h3>
+		<p> loreui sumd </p>
+	</div>
+	<div class="project-info">
+		<div class="project-info__padding">
+			<div class="grid">
+				<div class="project-info__content grid__item one-whole">
+					<h2>Serko Mobile Application</h2>
+					<hr/>
+					<p>Client: client name</p>
+					<p>Role: Role played in project</p>
+					<blockquote class="project-info__quote">
+						<p class="mega">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> </br>
+						<cite>Person name,<small>Position</small></cite>
+					</blockquote>
+				</div>
+				<div class="project-info__image grid__item one-whole">
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
+	<div class="pod--project__thumbnail">
+		<img src="//placehold.it/400x300/888/fff&text=project" alt="" />
+		<h3>Christchurch International Airport Mobile Website</h3>
+		<p> loreui sumd </p>
+	</div>
+	<div class="project-info">
+		<div class="project-info__padding">
+			<div class="grid">
+				<div class="project-info__content grid__item one-whole">
+					<h2>Christchurch International Airport Mobile Website</h2>
+					<hr/>
+					<p>Client: client name</p>
+					<p>Role: Role played in project</p>
+					<blockquote class="project-info__quote">
+						<p class="mega">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> </br>
+						<cite>Person name,<small>Position</small></cite>
+					</blockquote>
+				</div>
+				<div class="project-info__image grid__item one-whole">
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
+	<div class="pod--project__thumbnail">
+		<img src="//placehold.it/400x300/888/fff&text=project" alt="" />
+		<h3> Rosie's Education</h3>
+		<p> loreui sumd </p>
+	</div>
+	<div class="project-info">
+		<div class="project-info__padding">
+			<div class="grid">
+				<div class="project-info__content grid__item one-whole">
+					<h2>Rosie's Education</h2>
+					<hr/>
+					<p>Client: DairyNZ</p>
+					<p>Role: Role played in project</p>
+					<blockquote class="project-info__quote">
+						<p class="mega">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> </br>
+						<cite>Person name,<small>Position</small></cite>
+					</blockquote>
+				</div>
+				<div class="project-info__image grid__item one-whole">
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
+	<div class="pod--project__thumbnail">
+		<img src="//placehold.it/400x300/888/fff&text=project" alt="" />
+		<h3>Robert Harris Coffee</h3>
+		<p> loreui sumd </p>
+	</div>
+	<div class="project-info">
+		<div class="project-info__padding">
+			<div class="grid">
+				<div class="project-info__content grid__item one-whole">
+					<h2>Robert Harris Coffee</h2>
+					<hr/>
+					<p>Client: client name</p>
+					<p>Role: Role played in project</p>
+					<blockquote class="project-info__quote">
+						<p class="mega">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> </br>
+						<cite>Person name,<small>Position</small></cite>
+					</blockquote>
+				</div>
+				<div class="project-info__image grid__item one-whole">
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
+	<div class="pod--project__thumbnail">
+		<img src="//placehold.it/400x300/888/fff&text=project" alt="" />
+		<h3>Taste at the cloud</h3>
+		<p> loreui sumd </p>
+	</div>
+	<div class="project-info">
+		<div class="project-info__padding">
+			<div class="grid">
+				<div class="project-info__content grid__item one-whole">
+					<h2>Taste at the cloud</h2>
+					<hr/>
+					<p>Client: client name</p>
+					<p>Role: Role played in project</p>
+					<blockquote class="project-info__quote">
+						<p class="mega">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> </br>
+						<cite>Person name,<small>Position</small></cite>
+					</blockquote>
+				</div>
+				<div class="project-info__image grid__item one-whole">
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
+	<div class="pod--project__thumbnail">
+		<img src="//placehold.it/400x300/888/fff&text=project" alt="" />
+		<h3>Dairy at work</h3>
+		<p> loreui sumd </p>
+	</div>
+	<div class="project-info">
+		<div class="project-info__padding">
+			<div class="grid">
+				<div class="project-info__content grid__item one-whole">
+					<h2>Dairy at work</h2>
+					<hr/>
+					<p>Client: client name</p>
+					<p>Role: Role played in project</p>
+					<blockquote class="project-info__quote">
+						<p class="mega">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> </br>
+						<cite>Person name,<small>Position</small></cite>
+					</blockquote>
+				</div>
+				<div class="project-info__image grid__item one-whole">
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
+	<div class="pod--project__thumbnail">
+		<img src="//placehold.it/400x300/888/fff&text=project" alt="" />
+		<h3> Project Name</h3>
+		<p> loreui sumd </p>
+	</div>
+	<div class="project-info">
+		<div class="project-info__padding">
+			<div class="grid">
+				<div class="project-info__content grid__item one-whole">
+					<h2>Project Name</h2>
+					<hr/>
+					<p>Client: client name</p>
+					<p>Role: Role played in project</p>
+					<blockquote class="project-info__quote">
+						<p class="mega">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> </br>
+						<cite>Person name,<small>Position</small></cite>
+					</blockquote>
+				</div>
+				<div class="project-info__image grid__item one-whole">
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+					<img src="//placehold.it/900x450/666/fff" alt="" />
+					<p> lorem</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+		<!-- / projects -->
+
+		<!-- experience -->
+		<div id="experience" class="grid__item one-whole pod pod--padded">
+			<h2 class="alpha">Experience</h2>
+			<hr />
+			<p class="kilo">lorem isumd olor smuer</p>
+		</div>
+		<div class="grid__item one-whole text--left pod--background pod-background--experience">
+			<h2 class="timeline-list__heading iconf-suitcase">Work</h2>
+			<ol class="timeline-list">
+				<li class="grid">
+	<div class="grid__item one-whole m-one-half">
+		<h3>Terabyte Interative</h3>
+		<p class="kilo text--light">April 2007 – Present (6 years 10 months)</p>
+		<p>Senior Designer</p>
+	</div>
+	<div class="grid__item one-whole m-one-half">
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,.</p>
+	</div>
+</li>
+<li class="grid">
+	<div class="grid__item one-whole m-one-half">
+		<h3>Freelance Designer</h3>
+		<p class="kilo text--light">January 2011 – Present (3 years 1 month) </p>
+	</div>
+	<div class="grid__item one-whole m-one-half">
+		<p>Pellentesque habitant morbi tristique seit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique seit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	</div>
+</li>
+<li class="grid">
+	<div class="grid__item one-whole m-one-half">
+		<h3>gardyneHOLT</h3>
+		<p class="kilo text--light">February 2007 – March 2007 (2 months)</p>
+		<p>Graphic Design Internship</p>
+	</div>
+	<div class="grid__item one-whole m-one-half">
+		<p>Pellentesque habitant mors eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	</div>
+</li>
+			</ol>
+			
+			<h2 class="timeline-list__heading iconf-graduate">Education</h2>
+			<ol class="timeline-list">
+				<li class="grid">
+	<div class="grid__item one-whole m-one-half">
+		<h3>Auckland University of Technology</h3>
+		<p class="kilo text--light">January 0001 - Present (99 years 0 months)</p>
+		<p>Something</p>
+	</div>
+	<div class="grid__item one-whole m-one-half">
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	</div>
+</li>
+
+<li class="grid">
+	<div class="grid__item one-whole m-one-half">
+		<h3>Terabyte Interative</h3>
+		<p class="kilo text--light">January 0001 - Present (99 years 0 months)</p>
+		<p>Something</p>
+	</div>
+	<div class="grid__item one-whole m-one-half">
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	</div>
+</li>
+			</ol>
+
+			<h2 class="timeline-list__heading iconf-award">Awards</h2>
+			<ol class="timeline-list">
+				<li class="grid">
+	<div class="grid__item one-whole m-one-half">
+		<h3>Taste at the Cloud</h3>
+		<p class="kilo text--light">2012</p>
+		<p>Webby Honoree (Lead Designer)</p>
+	</div>
+	<div class="grid__item one-whole m-one-half">
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+	</div>
+</li>
+
+<li class="grid">
+	<div class="grid__item one-whole m-one-half">
+		<h3>Christchurch International Airport Mobile Website </h3>
+		<p class="kilo text--light">2011</p>
+		<p>Best Awards (Lead Designer)</p>
+	</div>
+	<div class="grid__item one-whole m-one-half">
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+	</div>
+</li>
+
+<li class="grid">
+	<div class="grid__item one-whole m-one-half">
+		<h3>Lindauer - Auckland Art Gallery</h3>
+		<p class="kilo text--light">2010</p>
+		<p>Australasia Internet Best Practice Award </p>
+	</div>
+	<div class="grid__item one-whole m-one-half">
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+	</div>
+</li>
+
+<li class="grid">
+	<div class="grid__item one-whole m-one-half">
+		<h3>Epson/NZIPP Iris Professional Photography Awards</h3>
+		<p class="kilo text--light">2006</p>
+		<p>Student</p>
+	</div>
+	<div class="grid__item one-whole m-one-half">
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	</div>
+</li>
+			</ol>
+		</div>
+		<!-- /experience -->
+	</div>
+</div>
+
+<!-- contact -->
+<div class="contact-container">
+<div class="master-wrapper">
+	<div id="contact" class="pod pod--contact text--center">
+		<h2 class="alpha">Say Hello</h2>
+		<hr/>
+		<p class="mega pod--contact__faded">You like the stuff you've seen so far? In any case, feel free to drop a line and I'll be happy to reply asap.</p>
+		<p class="mega text--spaced">
+			Phone: <nobr><tel>+64 21 108 6546</tel></nobr><br/>
+			Email: <a href="mailto:hello@lydiabae.com">hello@lydiabae.com</a><br/>
+			<!-- http://geek.michaelgrace.org/2010/03/create-html-link-that-starts-a-skype-call/ -->
+			Skype ID: <a href="skype:********?call">LydiaBae</a>
+		</p>
+		<br/>
+		<a class="btn" href="#">Download my CV</a>
+		<br/>
+		<h2 class="pod--contact__follow-heading pod--contact__faded">Follow</h2>
+		<ul class="social-links list-inline">
+			<li>
+				<a class="social-twitter iconf-twitter" href="#">
+					<span class="iconf__text">twitter</span>
+				</a>
+			</li>
+			<li>
+				<a class="social-dribbble iconf-dribbble" href="#">
+					<span class="iconf__text">dribbble</span>
+				</a>
+			</li>
+			<li>
+				<a class="social-linkedin iconf-linkedin" href="#">
+					<span class="iconf__text">linkedin</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+<!-- / contact -->
+	<!-- Footer Styles -->
+
+	<script src="/content/scripts/src/paths.js"></script>
+<script>
+	//var mainPath = requirejs.s.contexts._.config.paths['main'] || 'main';
+	//var mainFileName = mainPath.substr(mainPath.indexOf('main'), mainPath.length);
+	//var mainUrl = '/content/scripts/src/' + mainFileName + '.js';
+	require.config({
+		baseUrl: "/content/scripts/src/lib"
+	});
+	require(["/content/scripts/src/main.js"], function () {
+		require(["app/page/all"]);
+	});
+</script>
 </body>
 </html>

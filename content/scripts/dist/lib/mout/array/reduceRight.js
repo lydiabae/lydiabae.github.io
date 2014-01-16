@@ -1,0 +1,1 @@
+define([],function(){function e(e,t,n){var r=arguments.length>2;if(e==null||!e.length){if(r)return n;throw new Error("reduce of empty array with no initial value")}var i=e.length,s=n,o;while(--i>=0)o=e[i],r?s=t(s,o,i,e):(s=o,r=!0);return s}return e});

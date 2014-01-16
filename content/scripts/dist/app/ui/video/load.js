@@ -1,0 +1,1 @@
+define(["jquery","pubsub"],function(e){var t;return{init:function(){t=this,this._initVideoEvent()},loadVideo:function(e){e.preventDefault();var t=this;require(["app/ui/video/common","app/ui/video/youtube"],function(e,n){e.init(t),n.init(t)})},_initVideoEvent:function(){e(".js-video-player").on("click",".js-video",t.loadVideo)}}});
