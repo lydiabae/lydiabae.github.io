@@ -1,1 +1,0 @@
-define(["../lang/isFunction"],function(e){function t(t,n){var r={};if(t==null)return r;var i=-1,s=t.length,o;if(e(n))while(++i<s)o=t[i],r[n(o)]=o;else while(++i<s)o=t[i],r[o[n]]=o;return r}return t});

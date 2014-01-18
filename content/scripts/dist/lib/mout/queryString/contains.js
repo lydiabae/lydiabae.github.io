@@ -1,1 +1,0 @@
-define(["./getQuery"],function(e){function t(t,n){var r=new RegExp("(\\?|&)"+n+"=","g");return r.test(e(t))}return t});

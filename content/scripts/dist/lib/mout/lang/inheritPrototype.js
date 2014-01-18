@@ -1,1 +1,0 @@
-define(["./createObject"],function(e){function t(t,n){var r=e(n.prototype);r.constructor=t,t.prototype=r}return t});

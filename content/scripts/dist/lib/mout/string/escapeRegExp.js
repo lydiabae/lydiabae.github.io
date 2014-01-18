@@ -1,1 +1,0 @@
-define(["../lang/toString"],function(e){function n(n){return n=e(n),n.replace(t,"\\$&")}var t=/[\\.+*?\^$\[\](){}\/'#]/g;return n});

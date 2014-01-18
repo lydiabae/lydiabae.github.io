@@ -1,1 +1,0 @@
-define(["./namespace"],function(e){function t(t,n,r){var i=/^(.+)\.(.+)$/.exec(n);i?e(t,i[1])[i[2]]=r:t[n]=r}return t});

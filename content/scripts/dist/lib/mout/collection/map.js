@@ -1,1 +1,0 @@
-define(["../lang/isObject","../object/values","../array/map","../function/makeIterator_"],function(e,t,n,r){function i(i,s,o){return s=r(s,o),e(i)&&i.length==null&&(i=t(i)),n(i,function(e,t,n){return s(e,t,n)})}return i});

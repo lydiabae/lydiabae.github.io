@@ -1,1 +1,0 @@
-define(["./kindOf"],function(e){function n(n){var r=[],i=e(n),s;if(n!=null)if(n.length==null||i==="String"||i==="Function"||i==="RegExp"||n===t)r[r.length]=n;else{s=n.length;while(s--)r[s]=n[s]}return r}var t=this;return n});

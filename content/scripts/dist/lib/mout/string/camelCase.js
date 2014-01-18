@@ -1,1 +1,0 @@
-define(["../lang/toString","./replaceAccents","./removeNonWord","./upperCase","./lowerCase"],function(e,t,n,r,i){function s(s){return s=e(s),s=t(s),s=n(s).replace(/[\-_]/g," ").replace(/\s[a-z]/g,r).replace(/\s+/g,"").replace(/^[A-Z]/g,i),s}return s});

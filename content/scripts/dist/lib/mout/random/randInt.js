@@ -1,1 +1,0 @@
-define(["../number/MIN_INT","../number/MAX_INT","./rand"],function(e,t,n){function r(r,i){return r=r==null?e:~~r,i=i==null?t:~~i,Math.round(n(r-.5,i+.499999999999))}return r});

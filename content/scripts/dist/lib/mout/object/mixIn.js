@@ -1,1 +1,0 @@
-define(["./forOwn"],function(e){function t(t,r){var i=0,s=arguments.length,o;while(++i<s)o=arguments[i],o!=null&&e(o,n,t);return t}function n(e,t){this[t]=e}return t});

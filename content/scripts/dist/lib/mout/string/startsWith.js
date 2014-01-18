@@ -1,1 +1,0 @@
-define(["../lang/toString"],function(e){function t(t,n){return t=e(t),n=e(n),t.indexOf(n)===0}return t});

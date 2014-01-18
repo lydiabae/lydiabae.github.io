@@ -1,1 +1,0 @@
-define(["jquery"],function(e){var t,n;return{init:function(){t=this,n=e(".js-filter-single"),this._initEvents()},_initEvents:function(){n.on("change",this._onFilterChange)},_onFilterChange:function(){var t=e(this),n=t.find("option:selected").val();window.location=n}}});

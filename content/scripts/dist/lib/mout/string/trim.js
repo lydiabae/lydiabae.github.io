@@ -1,1 +1,0 @@
-define(["../lang/toString","./WHITE_SPACES","./ltrim","./rtrim"],function(e,t,n,r){function i(i,s){return i=e(i),s=s||t,n(r(i,s),s)}return i});

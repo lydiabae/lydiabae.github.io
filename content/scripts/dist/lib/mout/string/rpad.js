@@ -1,1 +1,0 @@
-define(["../lang/toString","./repeat"],function(e,t){function n(n,r,i){return n=e(n),i=i||" ",n.length<r?n+t(i,r-n.length):n}return n});

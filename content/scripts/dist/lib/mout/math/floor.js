@@ -1,1 +1,0 @@
-define([],function(){function e(e,t){return t=Math.abs(t||1),Math.floor(e/t)*t}return e});

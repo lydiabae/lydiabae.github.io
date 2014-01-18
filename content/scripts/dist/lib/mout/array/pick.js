@@ -1,1 +1,0 @@
-define(["../random/randInt"],function(e){function t(t){if(t==null||!t.length)return;var n=e(0,t.length-1);return t.splice(n,1)[0]}return t});

@@ -1,1 +1,0 @@
-define(["./forEach"],function(e){function t(e,t,n){if(e==null)return e;var r=Array.prototype.slice.call(arguments,2),i=-1,s=e.length,o;while(++i<s)o=e[i],o[t].apply(o,r);return e}return t});

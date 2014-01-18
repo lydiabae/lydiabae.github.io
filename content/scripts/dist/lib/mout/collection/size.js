@@ -1,1 +1,0 @@
-define(["../lang/isArray","../object/size"],function(e,t){function n(n){return n?e(n)?n.length:t(n):0}return n});

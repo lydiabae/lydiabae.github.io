@@ -1,1 +1,0 @@
-define([],function(){function e(e,t,n){return Math.abs(e-t)<=n}return e});

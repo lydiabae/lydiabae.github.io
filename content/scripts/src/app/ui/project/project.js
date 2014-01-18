@@ -89,7 +89,9 @@ define(
 				$container.find('.content-collapse').empty().remove();
 				$container.find('.is-selected').removeClass('is-selected');
 				$projects.filter(':nth-child(' + rowCount + 'n)').after('<div class="content-collapse grid__item one-whole"/>');
-				
+				if($projects.length % 3 !== 0) {
+					$projects.last().after('<div class="content-collapse grid__item one-whole"/>');
+				}
 				var currentRowIndex = 0;
 				var $contentItems = $content.children();
 				var $rows = $container.find('.content-collapse');

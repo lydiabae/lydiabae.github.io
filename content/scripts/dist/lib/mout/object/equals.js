@@ -1,1 +1,0 @@
-define(["./hasOwn","./every","../lang/isObject"],function(e,t,n){function r(e,t){return e===t}function i(t){return function(n,r){return e(this,r)&&t(n,this[r])}}function s(t,n){return e(this,n)}function o(e,o,u){return u=u||r,!n(e)||!n(o)?u(e,o):t(e,i(u),o)&&t(o,s,e)}return o});

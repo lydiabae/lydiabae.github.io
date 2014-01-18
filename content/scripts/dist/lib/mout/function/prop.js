@@ -1,1 +1,0 @@
-define([],function(){function e(e){return function(t){return t[e]}}return e});

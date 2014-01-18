@@ -1,1 +1,0 @@
-define(["./some","../function/makeIterator_"],function(e,t){function n(n,r,i){r=t(r,i);var s;return e(n,function(e,t,n){if(r(e,t,n))return s=e,!0}),s}return n});

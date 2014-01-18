@@ -1,1 +1,0 @@
-define(["../lang/toString","./trim"],function(e,t){function n(n,r,i,s){return n=e(n),i=i||"...",r=s?r+1:r,n=t(n),n.length<=r?n:(n=n.substr(0,r-i.length),n=s?n.substr(0,n.lastIndexOf(" ")):t(n),n+i)}return n});

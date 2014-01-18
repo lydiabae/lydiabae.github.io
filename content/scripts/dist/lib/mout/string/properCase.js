@@ -1,1 +1,0 @@
-define(["../lang/toString","./lowerCase","./upperCase"],function(e,t,n){function r(r){return r=e(r),t(r).replace(/^\w|\s\w/g,n)}return r});

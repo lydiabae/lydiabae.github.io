@@ -1,1 +1,0 @@
-define(["../lang/toString"],function(e){function t(t){return t=e(t),t.replace(/[^0-9a-zA-Z\xC0-\xFF \-_]/g,"")}return t});

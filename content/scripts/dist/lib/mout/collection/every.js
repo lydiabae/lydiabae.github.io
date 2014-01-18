@@ -1,1 +1,0 @@
-define(["./make_","../array/every","../object/every"],function(e,t,n){return e(t,n)});

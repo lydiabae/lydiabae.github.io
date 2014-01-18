@@ -1,1 +1,0 @@
-define(["../time/now"],function(e){function t(t,n){function l(){f=e(),i=null,s=t.apply(r,o)}function c(){return r=this,o=arguments,u=e(),a=n-(u-f),a<=0?(clearTimeout(i),f=u,s=t.apply(r,o)):i||(i=setTimeout(l,a)),s}var r,i,s,o,u,a,f=0;return c}return t});

@@ -1,1 +1,0 @@
-define(["../lang/isObject","./equals"],function(e,t){function n(e,t){return e===t}function r(i,s,o){function u(e,t){return r(e,t,o)}return o=o||n,!e(i)||!e(s)?o(i,s):t(i,s,u)}return r});

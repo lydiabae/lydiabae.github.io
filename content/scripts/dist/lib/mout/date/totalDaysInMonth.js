@@ -1,1 +1,0 @@
-define(["../lang/isDate","./isLeapYear"],function(e,t){function r(r,i){if(e(r)){var s=r;year=s.getFullYear(),i=s.getMonth()}return i===1&&t(r)?29:n[i]}var n=[31,28,31,30,31,30,31,31,30,31,30,31];return r});

@@ -1,1 +1,0 @@
-(function(e,t,n,r){function i(e){e.preventDefault(),t.print()}e.fn.printernator=function(t){var n={delegate:""};return this.options=e.extend({},n,t),this.options.delegate.length?e(this.options.delegate).on("click",this,i):this.on("click",i)}})(jQuery,window,document);

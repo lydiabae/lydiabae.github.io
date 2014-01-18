@@ -1,1 +1,0 @@
-define(["../array/join"],function(e){function t(t){var n=e(Array.prototype.slice.call(arguments),"/");return n.replace(/\/{2,}/g,"/")}return t});

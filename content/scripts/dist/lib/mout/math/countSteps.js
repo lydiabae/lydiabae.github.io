@@ -1,1 +1,0 @@
-define([],function(){function e(e,t,n){return e=Math.floor(e/t),n?e%n:e}return e});

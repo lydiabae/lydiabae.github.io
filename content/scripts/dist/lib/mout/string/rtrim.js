@@ -1,1 +1,0 @@
-define(["../lang/toString","./WHITE_SPACES"],function(e,t){function n(n,r){n=e(n),r=r||t;var i=n.length-1,s=r.length,o=!0,u,a;while(o&&i>=0){o=!1,u=-1,a=n.charAt(i);while(++u<s)if(a===r[u]){o=!0,i--;break}}return i>=0?n.substring(0,i+1):""}return n});

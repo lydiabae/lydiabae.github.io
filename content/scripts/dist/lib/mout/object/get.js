@@ -1,1 +1,0 @@
-define([],function(){function e(e,t){var n=t.split("."),r=n.pop();while(t=n.shift()){e=e[t];if(typeof e!="object")return}return e[r]}return e});
