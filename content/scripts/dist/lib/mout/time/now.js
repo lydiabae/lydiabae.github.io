@@ -1,0 +1,1 @@
+define([],function(){var e=typeof Date.now=="function"?Date.now:function(){return+(new Date)};return e});

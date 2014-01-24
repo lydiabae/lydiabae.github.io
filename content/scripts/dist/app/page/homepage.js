@@ -1,0 +1,1 @@
+define(["jquery","app/ui/rotator/rotator"],function(e,t){e("#js-rotator").length&&t.init()});

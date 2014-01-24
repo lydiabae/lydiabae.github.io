@@ -1,0 +1,1 @@
+define(["./dayOfTheYear"],function(e){function t(t,n){n=n==null?0:n;var r=e(t),i=(7+t.getDay()-n)%7,s=6-n-i;return Math.floor((r+s)/7)}return t});

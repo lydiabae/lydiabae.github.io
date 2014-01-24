@@ -1,0 +1,1 @@
+define(["./prop","../object/deepMatches"],function(e,t){function n(n,r){switch(typeof n){case"object":return n!=null?function(e,r,i){return t(e,n)}:n;case"string":case"number":return e(n);case"function":return typeof r=="undefined"?n:function(e,t,i){return n.call(r,e,t,i)};default:return n}}return n});

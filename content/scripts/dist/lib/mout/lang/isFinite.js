@@ -1,0 +1,1 @@
+define(["./isNumber"],function(e){function n(n){var r=!1;return typeof n=="string"&&n!==""?r=t.isFinite(parseFloat(n)):e(n)&&(r=t.isFinite(n)),r}var t=this;return n});

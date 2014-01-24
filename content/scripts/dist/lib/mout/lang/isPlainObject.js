@@ -1,0 +1,1 @@
+define([],function(){function e(e){return!!e&&typeof e=="object"&&e.constructor===Object}return e});

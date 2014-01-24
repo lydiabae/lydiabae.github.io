@@ -1,0 +1,1 @@
+define(["./random"],function(e){function t(){return e()>.5?1:0}return t});

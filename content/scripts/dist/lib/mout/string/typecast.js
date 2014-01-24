@@ -1,0 +1,1 @@
+define([],function(){function t(t){var n;return t===null||t==="null"?n=null:t==="true"?n=!0:t==="false"?n=!1:t===e||t==="undefined"?n=e:t===""||isNaN(t)?n=t:n=parseFloat(t),n}var e;return t});

@@ -1,0 +1,1 @@
+define(["./make_","../array/max","../object/max"],function(e,t,n){return e(t,n)});

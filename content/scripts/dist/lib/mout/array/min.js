@@ -1,0 +1,1 @@
+define(["./forEach","../function/makeIterator_"],function(e,t){function n(e,n,r){if(e==null||!e.length)return-Infinity;if(e.length&&!n)return Math.min.apply(Math,e);n=t(n,r);var i,s=Infinity,o,u,a=-1,f=e.length;while(++a<f)o=e[a],u=n(o,a,e),u<s&&(s=u,i=o);return i}return n});

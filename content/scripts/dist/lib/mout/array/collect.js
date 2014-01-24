@@ -1,0 +1,1 @@
+define(["./append","../function/makeIterator_"],function(e,t){function n(n,r,i){r=t(r,i);var s=[];if(n==null)return s;var o=-1,u=n.length;while(++o<u){var a=r(n[o],o,n);a!=null&&e(s,a)}return s}return n});

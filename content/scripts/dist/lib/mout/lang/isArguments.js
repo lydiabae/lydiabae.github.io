@@ -1,0 +1,1 @@
+define(["./isKind"],function(e){var t=e(arguments,"Arguments")?function(t){return e(t,"Arguments")}:function(e){return!!e&&!!Object.prototype.hasOwnProperty.call(e,"callee")};return t});

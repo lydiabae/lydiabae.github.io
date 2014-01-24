@@ -1,0 +1,1 @@
+define(["./kindOf"],function(e){function t(t,n){return e(t)===n}return t});

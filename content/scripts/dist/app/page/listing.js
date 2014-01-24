@@ -1,0 +1,1 @@
+define(["jquery","app/ui/accordion/accordion","app/ui/filter/filterChange"],function(e,t,n){e(".js-accordion").length&&t.init(),e(".js-filter-single").length&&n.init()});

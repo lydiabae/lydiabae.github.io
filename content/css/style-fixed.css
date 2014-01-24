@@ -4512,9 +4512,9 @@ h2.alpha {
   margin-bottom: 0.1em;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
   h2.alpha {
-    font-size: 80px;
+    font-size: 90px;
   }
 }
 h3 {
@@ -4813,6 +4813,36 @@ body {
   background-color: #333;
   overflow: hidden;
   position: relative;
+  color: white;
+}
+.project-info h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+.project-info h3 {
+  color: white;
+}
+.project-info hr {
+  background-color: white;
+}
+.project-info p, .project-info li, .project-info cite {
+  font-family: 'Open Sans', sans-serif;
+}
+.project-info blockquote {
+  line-height: 1.1;
+}
+.project-info blockquote p {
+  font-family: georgia, serif;
+  line-height: 1.18696em;
+}
+.project-info blockquote cite {
+  font-style: normal;
+}
+.project-info blockquote cite small:before {
+  content: ' | ';
+}
+.project-info li {
+  margin-bottom: .5em;
 }
 .project-info .js-proj-close {
   position: absolute;
@@ -4843,22 +4873,8 @@ body {
 }
 .project-info .project-info__content {
   padding: 0 10%;
-  color: white;
   padding-bottom: 30px;
   padding-top: 30px;
-}
-.project-info .project-info__content h2 {
-  color: white;
-  margin-bottom: 20px;
-}
-.project-info .project-info__content hr {
-  background-color: white;
-}
-.project-info .project-info__content blockquote {
-  line-height: 1.1;
-}
-.project-info .project-info__content blockquote p {
-  line-height: 1.18696em;
 }
 
 @media only screen and (max-width: 640px) {
@@ -4951,8 +4967,8 @@ body {
 
 @media only screen and (min-width: 768px) {
   .pod.pod--padded {
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -4971,20 +4987,39 @@ body {
   }
 }
 .pod--background {
-  padding-bottom: 200px;
-  background: url("/content/images/interface/bg/bg_intro.jpg") bottom center no-repeat;
-  background-size: 100% auto;
+  background: bottom center no-repeat;
 }
 
-@media only screen and (max-width: 600px) {
-  .pod--background {
-    background-image: url("/content/images/interface/bg/bg_intro_mobile.jpg");
-  }
+.pod-background--intro {
+  padding-bottom: 500px;
+  background-image: url("/content/images/interface/bg/bg_intro.jpg");
 }
+
 .pod-background--experience {
+  padding-bottom: 200px;
   background-image: url("/content/images/interface/bg/bg_contact.jpg");
 }
 
+@media only screen and (max-width: 600px) {
+  .pod-background--intro {
+    background-image: url("/content/images/interface/bg/bg_intro_mobile_480.jpg");
+  }
+
+  .pod-background--experience {
+    background-image: url("/content/images/interface/bg/bg_contact_mobile_480.jpg");
+    padding-bottom: 170px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .pod-background--intro {
+    background-image: url("/content/images/interface/bg/bg_intro_mobile_320.jpg");
+    padding-bottom: 315px;
+  }
+
+  .pod-background--experience {
+    background-image: url("/content/images/interface/bg/bg_contact_mobile_320.jpg");
+  }
+}
 .warning {
   width: 100%;
 }
@@ -5108,6 +5143,9 @@ body {
   border-radius: 4px;
   content: '';
   background: #888888;
+}
+.timeline-list li li {
+  margin-bottom: .5em;
 }
 
 .timeline-list__heading {

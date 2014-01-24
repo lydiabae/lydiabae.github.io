@@ -1,0 +1,1 @@
+define(["./startOf"],function(e){function t(t,n,r){return r&&(t=e(t,r),n=e(n,r)),Number(t)===Number(n)}return t});

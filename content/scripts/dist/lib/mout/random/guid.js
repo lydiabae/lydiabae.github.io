@@ -1,0 +1,1 @@
+define(["./randHex","./choice"],function(e,t){function n(){return e(8)+"-"+e(4)+"-"+"4"+e(3)+"-"+t(8,9,"a","b")+e(3)+"-"+e(12)}return n});

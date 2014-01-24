@@ -1,0 +1,1 @@
+define(["./forOwn","../lang/isPlainObject"],function(e,t){function n(r,i){var s=0,o=arguments.length,u;while(++s<o)u=arguments[s],u&&e(u,function(e,i){var s=r[i];s==null?r[i]=e:t(s)&&t(e)&&n(s,e)});return r}return n});

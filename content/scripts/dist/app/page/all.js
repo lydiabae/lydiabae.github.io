@@ -1,0 +1,1 @@
+define(["jquery","app/ui/rotator/rotator","app/ui/nav/load","util/lazyload","app/ui/project/project"],function(e,t,n,r,i){n.init(),r.init(),i.init()});

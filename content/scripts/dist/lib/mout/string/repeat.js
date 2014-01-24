@@ -1,0 +1,1 @@
+define(["../lang/toString"],function(e){function t(t,n){return t=e(t),(new Array(n+1)).join(t)}return t});

@@ -1,0 +1,1 @@
+define([],function(){function e(e,t,n){return function(){var r=Array.prototype.slice.call(arguments);return r[0]==null?n:typeof r[0].length=="number"?e.apply(null,r):t.apply(null,r)}}return e});

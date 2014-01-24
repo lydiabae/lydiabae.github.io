@@ -1,0 +1,1 @@
+define(["./forOwn","./size"],function(e,t){function n(n,r,i,s){var o=arguments.length>2;if(!t(n)&&!o)throw new Error("reduce of empty object with no initial value");return e(n,function(e,t,n){o?i=r.call(s,i,e,t,n):(i=e,o=!0)}),i}return n});

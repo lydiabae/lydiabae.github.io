@@ -1,0 +1,1 @@
+define(["../lang/toString"],function(e){function n(n,r){function i(e,t,n){return t+r+n}return r==null&&(r=" "),n=e(n),n=n.replace(t,i),n=n.toLowerCase(),n}var t=/([a-z\xE0-\xFF])([A-Z\xC0\xDF])/g;return n});

@@ -1,0 +1,1 @@
+define(["./hasOwn","../lang/deepClone","../lang/isObject"],function(e,t,n){function r(){var i=1,s,o,u,a;a=t(arguments[0]);while(u=arguments[i++])for(s in u){if(!e(u,s))continue;o=u[s],n(o)&&n(a[s])?a[s]=r(a[s],o):a[s]=t(o)}return a}return r});

@@ -1,0 +1,1 @@
+define(["../math/countSteps","../number/pad"],function(e,t){function s(s){var o=s<n?0:e(s,n),u=s<r?0:e(s,r,60),a=s<i?0:e(s,i,60),f="";return f+=o?o+":":"",f+=t(u,2)+":",f+=t(a,2),f}var n=36e5,r=6e4,i=1e3;return s});

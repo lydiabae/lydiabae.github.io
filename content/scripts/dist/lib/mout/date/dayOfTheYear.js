@@ -1,0 +1,1 @@
+define(["../lang/isDate"],function(e){function t(e){return(Date.UTC(e.getFullYear(),e.getMonth(),e.getDate())-Date.UTC(e.getFullYear(),0,1))/864e5+1}return t});

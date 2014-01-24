@@ -1,0 +1,1 @@
+define(["./map","../function/prop"],function(e,t){function n(n,r){return e(n,t(r))}return n});

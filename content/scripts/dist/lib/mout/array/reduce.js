@@ -1,0 +1,1 @@
+define(["./forEach"],function(e){function t(e,t,n){var r=arguments.length>2,i=n;if(e==null||!e.length){if(!r)throw new Error("reduce of empty array with no initial value");return n}var s=-1,o=e.length;while(++s<o)r?i=t(i,e[s],s,e):(i=e[s],r=!0);return i}return t});

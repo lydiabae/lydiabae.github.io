@@ -1,0 +1,1 @@
+define(["../string/typecast","./getQuery"],function(e,t){function n(n,r,i){var s=new RegExp("(\\?|&)"+r+"=([^&]*)"),o=s.exec(t(n)),u=o&&o[2]?o[2]:null;return i===!1?u:e(u)}return n});

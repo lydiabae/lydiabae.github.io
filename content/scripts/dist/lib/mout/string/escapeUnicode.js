@@ -1,0 +1,1 @@
+define(["../lang/toString"],function(e){function t(t,n){return t=e(t),t.replace(/[\s\S]/g,function(e){return!n&&/[\x20-\x7E]/.test(e)?e:"\\u"+("000"+e.charCodeAt(0).toString(16)).slice(-4)})}return t});
