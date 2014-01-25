@@ -2,7 +2,8 @@
 define(
 	[
 		'jquery',
-		'util/mediaqueries'
+		'util/mediaqueries',
+		'pubsub'
 	],
 	function ( $, MediaQueries ) {
 
@@ -105,6 +106,7 @@ define(
 					}
 					$row.append(container);
 				}
+				$.publish( '/content/updated', [] );
 			},
 
 			_setSelection: function (event) {

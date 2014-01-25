@@ -21,8 +21,8 @@ define(
 		return {
 
 			init: function () {
-
 				LazyLoad = this;
+
 				$lazyLoadContent = $( contentClass );
 				$lazyLoadImages = $( imagesClass );
 
@@ -44,6 +44,11 @@ define(
 
 			_initSubscriptions: function () {
 				$.subscribe( '/lazyload/image', this.loadImages );
+				$.subscribe( '/content/updated', LazyLoad._reInit );
+			},
+
+			_reInit: function() {
+				LazyLoad.init();
 			},
 
 			_loadAjaxedImages: function ( data ) {
