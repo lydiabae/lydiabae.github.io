@@ -1,1 +1,0 @@
-define([],function(){function e(e,t){t=t||2;var n=[];if(e==null)return n;var r=Math.floor(e.length/t),i=e.length%t,s=0,o=e.length,u=0,a;while(s<o)a=r,u<i&&a++,n.push(e.slice(s,s+a)),u++,s+=a;return n}return e});

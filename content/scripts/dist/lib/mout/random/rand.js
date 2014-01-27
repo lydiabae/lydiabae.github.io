@@ -1,1 +1,0 @@
-define(["./random","../number/MIN_INT","../number/MAX_INT"],function(e,t,n){function r(r,i){return r=r==null?t:r,i=i==null?n:i,r+(i-r)*e()}return r});

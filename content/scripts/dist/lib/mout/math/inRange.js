@@ -1,1 +1,0 @@
-define([],function(){function e(e,t,n,r){return r=r||0,e+r>=t&&e-r<=n}return e});

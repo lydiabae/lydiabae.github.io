@@ -1,1 +1,0 @@
-define(["./forEach","../function/makeIterator_"],function(e,t){function n(n,r,i){r=t(r,i);var s=[];return n?(e(n,function(e,t,n){r(e,t,n)&&(s[s.length]=e)}),s):s}return n});

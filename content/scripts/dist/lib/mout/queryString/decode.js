@@ -1,1 +1,0 @@
-define(["../string/typecast","../lang/isString"],function(e,t){function n(n,r){var i=(n||"").replace("?","").split("&"),s=i.length,o={},u,a;while(s--)u=i[s].split("="),a=r===!1?u[1]:e(u[1]),o[u[0]]=t(a)?decodeURIComponent(a):a;return o}return n});

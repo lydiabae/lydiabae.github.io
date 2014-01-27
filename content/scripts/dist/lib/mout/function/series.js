@@ -1,1 +1,0 @@
-define([],function(){function e(){var e=arguments;return function(){var t=0,n=e.length;while(t<n)e[t].apply(this,arguments),t+=1}}return e});

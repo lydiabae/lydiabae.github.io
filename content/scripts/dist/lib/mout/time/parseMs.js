@@ -1,1 +1,0 @@
-define(["../math/countSteps"],function(e){function t(t){return{milliseconds:e(t,1,1e3),seconds:e(t,1e3,60),minutes:e(t,6e4,60),hours:e(t,36e5,24),days:e(t,864e5)}}return t});

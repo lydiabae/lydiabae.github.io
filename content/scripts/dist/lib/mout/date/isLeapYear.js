@@ -1,1 +1,0 @@
-define(["../lang/isDate"],function(e){function t(t){return e(t)&&(t=t.getFullYear()),t%400===0||t%100!==0&&t%4===0}return t});

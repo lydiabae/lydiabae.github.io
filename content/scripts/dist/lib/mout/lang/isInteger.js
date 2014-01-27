@@ -1,1 +1,0 @@
-define(["./isNumber"],function(e){function t(t){return e(t)&&t%1===0}return t});

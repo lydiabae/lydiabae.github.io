@@ -1,1 +1,0 @@
-define(["./MAX_INT"],function(e){function t(t){return t<=0?0:t>e?~~(t%(e+1)):~~t}return t});

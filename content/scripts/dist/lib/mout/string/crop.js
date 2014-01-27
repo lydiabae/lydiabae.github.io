@@ -1,1 +1,0 @@
-define(["../lang/toString","./truncate"],function(e,t){function n(n,r,i){return n=e(n),t(n,r,i,!0)}return n});

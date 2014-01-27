@@ -1,1 +1,0 @@
-define(["./forOwn"],function(e){function t(t,n){var r=!0;return e(n,function(e,n){if(t[n]!==e)return r=!1}),r}return t});

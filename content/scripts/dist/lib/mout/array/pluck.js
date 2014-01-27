@@ -1,1 +1,0 @@
-define(["./map"],function(e){function t(t,n){return e(t,n)}return t});

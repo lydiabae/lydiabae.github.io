@@ -1,1 +1,0 @@
-define([],function(){function e(e,t){return Array.prototype.slice.call(e,t||0)}function t(t,n,r){var i=e(arguments,2);return function(){return t.apply(n,i.concat(e(arguments)))}}return t});

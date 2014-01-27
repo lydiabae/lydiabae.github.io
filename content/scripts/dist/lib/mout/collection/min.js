@@ -1,1 +1,0 @@
-define(["./make_","../array/min","../object/min"],function(e,t,n){return e(t,n)});

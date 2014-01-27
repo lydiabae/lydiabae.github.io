@@ -1,1 +1,0 @@
-define(["../function/makeIterator_"],function(e){function t(t,n,r){n=e(n,r);if(t==null)return-1;var i=-1,s=t.length;while(++i<s)if(n(t[i],i,t))return i;return-1}return t});

@@ -1,1 +1,0 @@
-define(["./isKind"],function(e){function t(t){return e(t,"Object")}return t});

@@ -1,1 +1,0 @@
-define([],function(){function e(e,t,n){n=n||0;if(e==null)return-1;var r=e.length,i=n<0?r+n:n;while(i<r){if(e[i]===t)return i;i++}return-1}return e});

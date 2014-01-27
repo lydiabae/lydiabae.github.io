@@ -1,1 +1,0 @@
-define(["../lang/toString","./camelCase","./upperCase"],function(e,t,n){function r(r){return r=e(r),t(r).replace(/^[a-z]/,n)}return r});

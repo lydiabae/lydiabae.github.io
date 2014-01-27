@@ -1,1 +1,0 @@
-define(["jquery","app/ui/lightbox/common","colorbox"],function(e,t){var n;return{init:function(){n=this,t.init();var r={transition:"none",maxWidth:"90%",title:t.setTitle,onLoad:t.onLoadProcessing,onComplete:t.onCompleteProcessing,photo:!0};e(".no-touch .js-lightbox-single").find("a").not(".figure-caption").colorbox(r)},open:function(){e(this).trigger("click")}}});

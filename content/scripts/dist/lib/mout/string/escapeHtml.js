@@ -1,1 +1,0 @@
-define(["../lang/toString"],function(e){function t(t){return t=e(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/'/g,"&#39;").replace(/"/g,"&quot;"),t}return t});

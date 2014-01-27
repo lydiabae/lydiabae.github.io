@@ -1,1 +1,0 @@
-define(["../lang/toString","./replaceAccents","./removeNonWord","./trim"],function(e,t,n,r){function i(i,s){return i=e(i),s==null&&(s="-"),i=t(i),i=n(i),i=r(i).replace(/ +/g,s).toLowerCase(),i}return i});
