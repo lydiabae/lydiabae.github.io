@@ -4312,11 +4312,12 @@ body {
 .pod--background {
   background: bottom center no-repeat;
 }
-
+/*
 .pod-background--intro {
   padding-bottom: 500px;
   background-image: url("/content/images/interface/bg/bg_intro.jpg");
 }
+*/
 
 .pod-background--experience {
   padding-bottom: 200px;
