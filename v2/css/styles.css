@@ -437,8 +437,8 @@ header a span {
 
 .btns {
 	width: 100%;
-	margin: auto;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 .btns a {
@@ -451,7 +451,7 @@ header a span {
 	border: solid #000000 1px;
 	text-decoration: none;
 	display: inline-block;
-	text-align: center;
+
 	transition: all ease-in-out .3s;
 	-webkit-transition: all ease-in-out .3s;
 }
