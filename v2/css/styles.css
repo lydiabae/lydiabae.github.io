@@ -434,13 +434,12 @@ header a span {
 .detail-quote p {
 	margin: -30px 0 0;
 }
+
 .btns {
 	width: 100%;
 	margin: auto;
 	margin-bottom: 20px;
 }
-
-
 
 .btns a {
 
@@ -452,8 +451,7 @@ header a span {
 	border: solid #000000 1px;
 	text-decoration: none;
 	display: inline-block;
-	position: relative;
-	left: 40%;
+	text-align: center;
 	transition: all ease-in-out .3s;
 	-webkit-transition: all ease-in-out .3s;
 }
