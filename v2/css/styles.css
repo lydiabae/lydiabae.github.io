@@ -415,7 +415,7 @@ header a span {
 	width: 100%;
 }
 
-.google-banner {
+#google-banner {
 	margin: auto;
 	display: block;
 }
