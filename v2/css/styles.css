@@ -415,6 +415,11 @@ header a span {
 	width: 100%;
 }
 
+.google-banner {
+	margin: auto;
+	display: block;
+}
+
 .detail-quote {
 	padding: 40px 80px;
 	font-size: 28px;
