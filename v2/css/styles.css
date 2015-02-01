@@ -110,6 +110,7 @@ header a span {
 	padding: 0 0 50px;
 	text-align: center;
 	margin-top: 60px;
+	visibility: hidden;
 }
 .work-filter li {
 	position: relative;
@@ -315,7 +316,6 @@ header a span {
 /** DETAIL PAGE */
 .hero {
 	position: relative;
-	max-width: 1600px;
 	margin: auto;
 }
 .hero img {
