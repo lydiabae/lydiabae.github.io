@@ -184,7 +184,7 @@ header a span {
 .pod-work a {
 	position: relative;
 	display: block;
-	background-color: #7cf8d7;
+	background-color: #effb41;
 }
 
 .pod-work span {
@@ -200,7 +200,7 @@ header a span {
 	-webkit-transition: opacity ease-out .5s;
 	transition: opacity ease-out .5s;
 	opacity: 0;
-	color: #555;
+	color: #4054b2;
 	letter-spacing: 2px;
 }
 .pod-work a:hover span {
@@ -216,7 +216,7 @@ header a span {
 	margin-top: 10px;
 	width: 64px;
 	height: 3px;
-	background-color: #000;
+	background-color: #4054b2;
 	z-index: 2;
 }
 
