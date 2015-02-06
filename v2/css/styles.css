@@ -490,8 +490,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 
 @media screen and (max-width: 520px) {
 	.intro-animation h2  {
-		font-size: 33px;
-		line-height: 42px;
+		font-size: 30px;
+		line-height: 38px;
 	}
 }
 .intro-animation p {
