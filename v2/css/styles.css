@@ -393,6 +393,12 @@ header a span {
 	-webkit-transition: all ease-in-out .3s;
 }
 
+.hero-logo-dark a:before, .hero-logo-dark a:after {
+	 color: #2bfecd;
+}
+
+
+
 @media screen and (max-width: 500px) {
 	.hero-logo a:before {
 		font-size: 25px;
