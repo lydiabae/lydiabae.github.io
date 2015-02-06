@@ -437,28 +437,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 
 @media screen and (max-width: 680px) {
 	.intro {
-		margin-bottom: 80px;
-		height: 550px;
-	}
-}
-@media screen and (max-width: 520px) {
-	.intro {
 		margin-bottom: 90px;
-		height: 500px;
-	}
-}
-
-@media screen and (max-width: 450px) {
-	.intro {
-		margin-bottom: 90px;
-		height: 500px;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	.intro {
-		margin-bottom: 70px;
-		height: 500px;
+		height: 600px;
 	}
 }
 
