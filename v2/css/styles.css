@@ -503,7 +503,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 
 @media screen and (max-width: 820px) {
 	.intro-animation h2  {
-		font-size: 46px;
+		font-size: 40px;
 		line-height: 50px;
 	}
 }
@@ -512,12 +512,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 	.intro-animation h2  {
 		font-size: 38px;
 		line-height: 48px;
-	}
-}
-@media screen and (max-width: 750px) {
-	.intro-animation h2  {
-		font-size: 36px;
-		line-height: 46px;
 	}
 }
 
