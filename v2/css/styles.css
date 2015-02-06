@@ -490,6 +490,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 	}
 }
 
+@media screen and (max-width: 450px) {
+	.intro-animation {
+	left: 5%;
+	right: 5%;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	}
+}
+
 
 .intro-animation h2 {
 	color: #fff; 
