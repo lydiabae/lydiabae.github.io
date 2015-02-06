@@ -440,6 +440,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 		height: 700px;
 	}
 }
+
 @media screen and (max-width: 680px) {
 	.intro {
 		margin-bottom: 90px;
@@ -510,7 +511,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 @media screen and (max-width: 770px) {
 	.intro-animation h2  {
 		font-size: 38px;
-		line-height: 50px;
+		line-height: 48px;
+	}
+}
+@media screen and (max-width: 740px) {
+	.intro-animation h2  {
+		font-size: 36px;
+		line-height: 46px;
 	}
 }
 
