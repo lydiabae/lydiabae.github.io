@@ -514,7 +514,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 		line-height: 48px;
 	}
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 750px) {
 	.intro-animation h2  {
 		font-size: 36px;
 		line-height: 46px;
