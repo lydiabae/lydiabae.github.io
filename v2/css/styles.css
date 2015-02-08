@@ -416,7 +416,7 @@ header a span {
 	display: block;
 	margin: auto;
 	height: 800px;
-	margin-bottom: 150px;
+	margin-bottom: 120px;
 /* Old browsers */
 	background: -moz-linear-gradient(left,  #0ce0c9 17%, #7c83d9 98%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(17%,#0ce0c9), color-stop(98%,#7c83d9)); /* Chrome,Safari4+ */
@@ -428,37 +428,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 
 }
 
+@media screen and (max-width: 1300px) {
+	.intro {
+		margin-bottom: 120px;
+		height: 800px;
+	}
+}
+
 @media screen and (max-width: 870px) {
 	.intro {
-		margin-bottom: 150px;
+		margin-bottom: 100px;
 		height: 800px;
 	}
 }
 @media screen and (max-width: 770px) {
 	.intro {
-		margin-bottom: 150px;
+		margin-bottom: 100px;
 		height: 700px;
 	}
 }
 
 @media screen and (max-width: 680px) {
 	.intro {
-		margin-bottom: 90px;
-		height: 650px;
+		margin-bottom: 60px;
+		height: 680px;
 	}
 }
 
 @media screen and (max-width: 520px) {
 	.intro {
-		margin-bottom: 150px;
-		height: 550px;
+		margin-bottom: 100px;
+		height: 590px;
 	}
 }
 
 @media screen and (max-width: 450px) {
 	.intro {
 		margin-bottom: 100px;
-		height: 550px;
+		height: 590px;
 	}
 }
 
@@ -466,7 +473,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 .intro-animation {
 	position: absolute;
 	z-index: 10;
-	top: 15%;
+	top: 10%;
 	left: 22%;
 	right: 22%;
 	vertical-align: middle;
