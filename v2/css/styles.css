@@ -705,3 +705,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 	background-color: #000000;
 	color: #ffffff;
 }
+
+video {  
+   width:100%; 
+   max-width:996px; 
+   height:auto; 
+}
