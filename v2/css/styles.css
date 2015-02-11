@@ -362,7 +362,7 @@ header a span {
 	z-index: 2;
 }
 .hero-logo {
-	position: relative;
+	position: fixed;
 	z-index: 3;
 	max-width: 1170px;
 	margin: auto;
@@ -384,8 +384,8 @@ header a span {
 .hero-logo a:before, .hero-logo a:after {
 	position: absolute;
 	z-index: 10;
-	top: 30px;
-	left: 20px;
+	top: 40px;
+	left: 40px;
 	display: inline-block;
 	color: #effb41;
 	font-size: 30px;
@@ -399,11 +399,6 @@ header a span {
 
 
 
-@media screen and (max-width: 500px) {
-	.hero-logo a:before {
-		font-size: 25px;
-	}
-}
 .hero-logo span {
 	display: none;
 }
