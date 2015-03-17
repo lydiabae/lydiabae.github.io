@@ -1,7 +1,6 @@
 /***************** Waypoints ******************/
 
-$(document).ready(function() {
-
+function runWaypoints() {
 	$('.wp1').waypoint(function() {
 		$('.wp1').addClass('animated fadeInLeft');
 	}, {
@@ -32,8 +31,50 @@ $(document).ready(function() {
 	}, {
 		offset: '75%'
 	});
+}
 
+function resetWaypoints() {
+  $('.wp1, .wp2, .wp3, .wp4, .wp5, .wp6').waypoint('destroy');
+}
+
+$(document).ready(function() {
+  runWaypoints();
 });
+
+(function () {
+  var app = {
+    init: function () {
+      app.filter.init();
+    },
+    filter: (function () {
+
+      var $list,
+      $filters;
+
+      function init() {
+        $list = $('.pod-work');
+        $filters = $('.work-filter li');
+        $filters.on('click', setFilter);
+      }
+
+      function setFilter() {
+        var filterType = $(this).text().toLowerCase();
+        $filters.removeClass('selected');
+        $(this).addClass('selected');
+        $list.filter('[data-filter]').removeClass('fadded');
+        if(filterType !== 'all') {
+          $list.filter('[data-filter]:not([data-filter*="' + filterType + '"])').addClass('fadded');
+          resetWaypoints();
+          runWaypoints();
+        }
+      }
+
+      return { init: init };
+    })()
+  };
+
+  $(document).ready(app.init);
+})();
 
 /***************** Slide-In Nav ******************/
 

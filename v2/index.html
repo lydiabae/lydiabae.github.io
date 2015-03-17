@@ -58,7 +58,7 @@
 			<div class="row">			
 				
 				<div class="col-sm-12 col-md-12 col-lg-8">
-					<div class="pod-work wp2" data-filter="applications,website,artdirection">
+					<div class="pod-work wp2" data-filter="applications,website,art direction">
 						<a href="detail_google_thinkwithgoogle.html">
 							<img src="images/home_google_thinkwithgoogle.png" alt=""/>
 							<span>Think with Google</span>
@@ -75,7 +75,7 @@
 						</a>
 					</div>
 				
-					<div class="pod-work wp2 delay-1s" data-filter="brainding,artdirection">
+					<div class="pod-work wp2 delay-1s" data-filter="branding,art direction">
 						<a href="detail_google_foundry.html">
 							<img src="images/home_google_foundry.png" alt=""/>
 							<span>Google | Foundry</span>
@@ -84,22 +84,22 @@
 				</div>
 
 
-				<div class="col-sm-12 col-md-6 col-lg-4 wp3" data-filter="illustration,artdirection">
-					<div class="pod-work wp3 delay-05s">
+				<div class="col-sm-12 col-md-6 col-lg-4 wp3">
+					<div class="pod-work wp3 delay-05s" data-filter="illustration,art direction">
 						<a href="detail_google_adwords.html">
 							<img src="images/banner_adwords.png" alt=""/>
 							<span>Google AdWords</span>
 						</a>
 					</div>
-					<div class="pod-work wp3 delay-1s" data-filter="website,artdirection">
+					<div class="pod-work wp3 delay-1s" data-filter="website,art direction">
 						<a href="detail_google_partners.html">
 							<img src="images/globe.gif" alt=""/>
 							<span>Google Partners | Banner</span>
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-12 col-lg-8" data-filter="website,artdirection">
-					<div class="pod-work wp3">
+				<div class="col-sm-12 col-md-12 col-lg-8">
+					<div class="pod-work wp3" data-filter="website,art direction">
 						<a href="detail_google_storylab.html">
 							<img src="images/home_storylab.png" alt=""/>
 							<span>Google Story Lab</span>
@@ -110,8 +110,8 @@
 
 
 			<div class="row">
-				<div class="col-sm-12 col-md-6" data-filter="website,artdirection">
-					<div class="pod-work wp4">
+				<div class="col-sm-12 col-md-6">
+					<div class="pod-work wp4" data-filter="website,art direction">
 						<a href="detail_google_cannes.html">
 							<img src="images/home_google_cannes.jpg" alt=""/>
 							<span>Google Cannes | Cannes Palais Posters</span>
@@ -120,8 +120,8 @@
 				</div>
 
 
-				<div class="col-sm-12 col-md-6" data-filter="website">
-					<div class="pod-work wp4 delay-05s">
+				<div class="col-sm-12 col-md-6">
+					<div class="pod-work wp4 delay-05s" data-filter="website">
 						<a href="detail_axa_hub.html">
 							<img src="images/axa.gif" alt=""/>
 							<span>Financial Times | AXA Distribution Hub</span>
@@ -133,8 +133,8 @@
 
 			<div class="row">
 				
-				<div class="col-sm-12 col-md-4"data-filter="artdirection">
-					<div class="pod-work wp5">
+				<div class="col-sm-12 col-md-4">
+					<div class="pod-work wp5" data-filter="art direction">
 						<a href="detail_google_email.html">
 							<img src="images/home_google_email2.png" alt=""/>
 							<span>Google Partners | Customisable Loyalty Email</span>
@@ -143,8 +143,8 @@
 				</div>
 
 
-				<div class="col-sm-12 col-md-4" data-filter="applications,website,artdirection">
-					<div class="pod-work wp5 delay-05s">
+				<div class="col-sm-12 col-md-4">
+					<div class="pod-work wp5 delay-05s" data-filter="applications,website,art direction">
 						<a href="index.html">
 							<img src="images/home_christchurchairport.png" alt=""/>
 							<span>Coming Soon</span>
@@ -153,7 +153,7 @@
 				</div>
 				
 				<div class="col-sm-12 col-md-4">
-					<div class="pod-work wp5 delay-1s">
+					<div class="pod-work wp5 delay-1s" data-filter="branding">
 						<a href="detail_google_compare.html">
 							<img src="images/placeholder2.png" alt=""/>
 							<span>Google Compare Icon</span>
@@ -164,7 +164,7 @@
 
 <!-- 
 			<div class="row">
-				<div class="col-sm-12 col-md-6" data-filter="artdirection,website">
+				<div class="col-sm-12 col-md-6" data-filter="art direction,website">
 					<div class="pod-work wp4">
 						<a href="detail_google_thinkwithgoogle.html">
 							<img src="images/home_google_thinkwithgoogle.png" alt=""/>
@@ -173,7 +173,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-md-6" data-filter="illustration,artdirection">
+				<div class="col-sm-12 col-md-6" data-filter="illustration,art direction">
 					<div class="pod-work wp4 delay-05s">
 						<a href="detail_google_foundry.html">
 							<img src="images/home_google_foundry.png" alt=""/>
@@ -210,38 +210,6 @@
 			<script src="js/bootstrap.min.js"></script>
 		
 				<script>
-			(function () {
-				var app = {
-					init: function () {
-						app.filter.init();
-					},
-					filter: (function () {
-
-						var $list,
-							$filters;
-
-						function init() {
-							$list = $('.pod-work');
-							$filters = $('.work-filter li');
-							$filters.on('click', setFilter);
-						}
-
-						function setFilter() {
-							var filterType = $(this).text().toLowerCase();
-							$filters.removeClass('selected');
-							$(this).addClass('selected');
-							$list.filter('[data-filter]').removeClass('fadded');
-							if(filterType !== 'all') {
-								$list.filter('[data-filter]:not([data-filter*="' + filterType + '"])').addClass('fadded');
-							}
-						}
-
-						return { init: init };
-					})()
-				};
-
-				$(document).ready(app.init);
-			})();
 		</script>
 		<script src="js/waypoints.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
