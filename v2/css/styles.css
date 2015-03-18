@@ -164,6 +164,25 @@ body {
 	background-color: #ffefcf;
 }
 
+.overview-cct h4{
+	color: #a41800 !important; 
+}
+
+.overview-cct p{
+	color: #574742;
+}
+
+
+.overview-cct .btns a {
+	color: #574742;
+	border: solid #574742 2px;
+}
+
+.overview-cct .btns a:hover {
+	background-color: #574742 ;
+	color: #ffefcf;
+}
+
 
 .container {
 	max-width: 1000px;
