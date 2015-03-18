@@ -768,6 +768,7 @@ header a span {
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	color: #333;
+	padding-top: 40px;
 }
 
 .detail-copy p {
@@ -775,7 +776,7 @@ header a span {
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 
