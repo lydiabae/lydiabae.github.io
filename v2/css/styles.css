@@ -160,6 +160,10 @@ body {
 	color: #00bcd5;
 }
 
+.overview-cct {
+	background-color: #ffefcf;
+}
+
 
 .container {
 	max-width: 1000px;
@@ -168,6 +172,13 @@ body {
 	padding-left: 0px;
 	padding-right: 0px;
 }
+
+.col-md-6 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
 
 /** FRAMEWORK */
 header {
@@ -739,15 +750,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ce0c9', end
 }
 
 .detail-copy p {
-	font-family: Raleway;
+	font-family: Roboto;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
 	padding-top: 20px;
 }
 
+
+.detail-copy ul {
+	text-align: left;
+	font-size: 18px;
+	list-style: none;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+.detail-copy li {
+	font-family: Roboto;
+	font-weight: 300;
+	margin-bottom: 10px;
+	line-height: 25px;
+	color: #333;
+}
+
 .detail-images {
 }
+
+
 
 @media screen and (max-width: 991px) {
 	.detail-images {
