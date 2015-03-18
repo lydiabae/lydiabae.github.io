@@ -62,7 +62,9 @@ $(document).ready(function() {
 					}
 				};
 				$container = $('.isotope');
-				$container.isotope(options);
+				$container.imagesLoaded(function(){
+					$container.isotope(options);
+				});
 				$list = $('.isotope [data-filter]');
 				$filters = $('.work-filter li');
 				$filters.on('click', setFilter);
