@@ -41,39 +41,51 @@ $(document).ready(function() {
   runWaypoints();
 });
 
-(function () {
-  var app = {
-    init: function () {
-      app.filter.init();
-    },
-    filter: (function () {
+(function() {
+	var app = {
+		init: function() {
+			app.filter.init();
+		},
+		filter: (function() {
 
-      var $list,
-      $filters;
+			var	$container,
+				$list,
+				$filters,
+				options;
 
-      function init() {
-        $list = $('.pod-work');
-        $filters = $('.work-filter li');
-        $filters.on('click', setFilter);
-      }
+			function init() {
+				options = {
+					itemSelector: '[class^=col]',
+					layoutMode: 'masonry',
+					masonry: {
+						columnWidth: '.col-lg-1'
+					}
+				};
+				$container = $('.isotope');
+				$container.isotope(options);
+				$list = $('.isotope [data-filter]');
+				$filters = $('.work-filter li');
+				$filters.on('click', setFilter);
+			}
 
-      function setFilter() {
-        var filterType = $(this).text().toLowerCase();
-        $filters.removeClass('selected');
-        $(this).addClass('selected');
-        $list.filter('[data-filter]').removeClass('fadded');
-        if(filterType !== 'all') {
-          $list.filter('[data-filter]:not([data-filter*="' + filterType + '"])').addClass('fadded');
-          resetWaypoints();
-          runWaypoints();
-        }
-      }
+			function setFilter() {
+				$container.isotope('destroy').isotope(options);
+				var filterType = $(this).text().toLowerCase();
+				$filters.removeClass('selected');
+				$(this).addClass('selected');
+				if (filterType !== 'all') {
+					var selector = '[data-filter*="' + filterType + '"]';
+					$container.isotope({ filter: selector });
+				} else {
+					$container.isotope({ filter: '*' });
+				}
+			}
 
-      return { init: init };
-    })()
-  };
+			return { init: init };
+		})()
+	};
 
-  $(document).ready(app.init);
+	$(document).ready(app.init);
 })();
 
 /***************** Slide-In Nav ******************/
@@ -114,34 +126,34 @@ $(function() {
 
 /***************** Overlays ******************/
 
-$(document).ready(function(){
-    if (Modernizr.touch) {
-        // show the close overlay button
-        $(".close-overlay").removeClass("hidden");
-        // handle the adding of hover class when clicked
-        $(".img").click(function(e){
-            if (!$(this).hasClass("hover")) {
-                $(this).addClass("hover");
-            }
-        });
-        // handle the closing of the overlay
-        $(".close-overlay").click(function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            if ($(this).closest(".img").hasClass("hover")) {
-                $(this).closest(".img").removeClass("hover");
-            }
-        });
-    } else {
-        // handle the mouseenter functionality
-        $(".img").mouseenter(function(){
-            $(this).addClass("hover");
-        })
-        // handle the mouseleave functionality
-        .mouseleave(function(){
-            $(this).removeClass("hover");
-        });
-    }
+$(document).ready(function() {
+	if (Modernizr.touch) {
+		// show the close overlay button
+		$(".close-overlay").removeClass("hidden");
+		// handle the adding of hover class when clicked
+		$(".img").click(function(e) {
+			if (!$(this).hasClass("hover")) {
+				$(this).addClass("hover");
+			}
+		});
+		// handle the closing of the overlay
+		$(".close-overlay").click(function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			if ($(this).closest(".img").hasClass("hover")) {
+				$(this).closest(".img").removeClass("hover");
+			}
+		});
+	} else {
+		// handle the mouseenter functionality
+		$(".img").mouseenter(function() {
+			$(this).addClass("hover");
+		})
+			// handle the mouseleave functionality
+			.mouseleave(function() {
+				$(this).removeClass("hover");
+			});
+	}
 });
 
 /***************** Flexsliders ******************/
