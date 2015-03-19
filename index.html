@@ -1,996 +1,205 @@
-<!DOCTYPE html>
-<!--[if lte IE 8 ]>    <html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="no-js ie9 lang="en"> <![endif]-->
-<!--[if (gte IE 10)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8" />
-	<title>UX/UI Designer | Lydia Bae</title>
-	<meta name="author" content="Terabyte | www.terabyte.co.nz" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-	<link rel="author" href="/humans.txt" />
-	<link rel="shortcut icon" href="/content/images/interface/ico/favicon.ico" type="image/x-icon">
-	<link rel="author" href="/humans.txt" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
-	<!--[if (gt IE 8) | (IEMobile)]><!-->
-		<link rel="stylesheet" href="/content/css/style.css" />
-	<!--<![endif]-->
-	<!--[if (lt IE 9) & (!IEMobile)]>
-		<link rel="stylesheet" href="/content/css/style-fixed.css" />
-	<![endif]-->
-	<script src="/content/scripts/src/lib/modernizr.dev.custom.js"></script>
-	<script src="/content/scripts/src/lib/require.js"></script>
-	<script src="/content/scripts/src/lib/jquery-1.10.2.js"></script>
-	<script>
-		$(document).ready(function(){
-			$('.inuit__menu a').click(function(){
-				goToByScroll($(this).attr('href'));
-			return false;
-			});
-			$('.js-close-inuit-nav').click(function(){
-				$('.inuit__menu').hide();
-			});
-			function goToByScroll(id){
-				$('html,body').animate({scrollTop: $(""+id).offset().top -60},'slow');
-				console.log($(""+id).offset().top + 258);
-			}
-			$('.js-toggle').click(function(){
-				$(this).find('.dropdown__list').toggle();
-			});
-			$('.kitchen-sink').click(function(){
-				$('.dropdown__list').hide();
-			});
-		});
-	</script>
-</head>
-<body>
-	<!-- Header Styles -->
-	<!-- Navigation -->
-<div class="navigation-container">
-	<div id="menu" class="navigation">
-		<ul>
-			<li><a class="" href="#skills">Skills</a></li>
-			<li><a class="logo-left" href="#projects">Projects</a></li>
-			<li><a class="logo-right" href="#experience">Experience</a></li>
-			<li><a class="" href="#contact">Contact</a></li>
-		</ul>
-	</div>
-</div>
-<div class="master-wrapper">
-	<div class="grid text--center">
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-
-
-		<div class="grid__item one-whole header">
-			<span class="logo iconf-logo_lydiabae">
-				<span class="iconf__text">Lydia Bae</span>
-			</span>
-			<a href="#menu" class="header__menu iconf-list js-menu-toggle">
-				<span class="iconf__text">Menu</span>
-			</a>
-		</div>
-
-
-		<div class="grid__item one-whole pod pod--padded pod--background pod-background--intro">
-			<!-- <h2 class="intro-heading"><span>Hi my name is</span><br/>Lydia Bae<br/><span>UX/UI Designer</span></h2> -->
-
-			<br/><br/><br/><br/>
-			<p class="kilo">I am an award-winning UX/UI designer who is passionate about creating meaningful and beautiful web experiences. I design digital solutions that tell a story, solve a need, educate, activate, and inspire. My intent with my designs is to take care of the user journey, help users achieve their goals, and ultimately drive business success. I hope to find a role where I can contribute my strengths, work with an awesome team, take on adventurous challenges, and make things look pretty.</p>
-			<br/><br/>
-		</div>
-
-		<!-- skills -->
-		<div id="skills" class="grid__item one-whole pod pod--padded">
-			<h2 class="alpha">Skills</h2>
-			<hr/>
-			<!-- <p class="kilo"> Outline of my skill set that I have developed throughout my career so far as well as skills I am currently developing.</p> -->
-		</div>
-		<div class="grid__item one-whole pod pod--background pod-background--skills">
-			<div class="grid grid--even-pod-clear">
-				<!-- Pod Skill -->
-<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
-	<span class="pod--skill__image">
-		<img src="/content/images/media/skills/skill_ia.jpg" alt="" />
-	</span>
-	<h3>Information Architecture</h3>
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
-	<span class="pod--skill__image">
-		<img src="/content/images/media/skills/skill_mobileapp.jpg" alt="" />
-	</span>
-	<h3>Mobile/Web Applications</h3>
-	<!-- <p>I have experience across a large range of different digital platforms from websites, mobile and tablet applications.</p> --> 
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
-	<span class="pod--skill__image">
-		<img src="/content/images/media/skills/skill_responsive.jpg" alt="" />
-	</span>
-	<h3>Responsive Web Design</h3>
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
-	<span class="pod--skill__image">
-		<img src="/content/images/media/skills/skill_ux.jpg" alt="" />
-	</span>
-	<h3>User Experience</h3>
-	
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
-	<span class="pod--skill__image">
-		<img src="/content/images/media/skills/skill_ui.jpg" alt="" />
-	</span>
-	<h3>Interface Design</h3>
-	<!-- <p>Having a good knowledge of web development helps my design process when designing for the web as I have a realistic view of the creative possibilities and technical constraints.</p> -->
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--skill">
-	<span class="pod--skill__image">
-		<img src="/content/images/media/skills/skill_artdirection.jpg" alt="" />
-	</span>
-	<h3>Art Direction</h3>
-</div>
+		<title>Lydia Bae - UI/UX Designer</title>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,700' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'>
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" href="css/animate.css"/>
+		<link rel="shortcut icon" href="images/favicon.png">
+		
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="hero">
+			<div class="hero-logo">
+				<a href="/v2" class="icon icon-mediumlogo">
+					<span>Lydia Bae</span>
+				</a>
+			</div>
+			<div class="intro">
+				<div class="intro-content">
+					<h4>Hi, I am Lydia Bae</h4>
+					<h2>I’m a digital designer based in London who enjoys creating innovative websites and applications.</h2>
+					<p><a href="#about">Find out more</a></p> 
+					<!-- <img src="images/browser.png" alt="" /> -->
+				</div>
 			</div>
 		</div>
-		<!-- / skills -->
 
-		<!-- projects -->
-		<div id="projects" class="grid__item one-whole pod pod--padded">
-			<h2 class="alpha">Projects</h2>
-			<hr/>
-		</div>
-		<div class="grid__item projects-container pod js-projects-container pod--background pod-background--project">
-			<div class="grid">
+		<div class="container">
+			<ul class="work-filter">
+				<li class="selected">All</li>
+				<li>Website</li>
+				<li>Mobile</li>
+				<li>Illustration</li>
+				<li>Branding</li>
+				<li>Art Direction</li>
+			</ul>
 
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_christchurchnz.jpg" alt="" />
-		<h3>Christchurch Canterbury Tourism </h3>
-		<p>2012</p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Christchurch Canterbury Tourism </h2>
-					<hr/>
-					<p>Client: Christchurch Canterbury Tourism </p>
-					<p>Responsive Web Design, Information Archtecture, Interface Design, Branding</p>
-					<p><a href="http://www.christchurchnz.com/" target="_blank">Visit Website </a></p>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cct_1.jpg" alt="" />
-
-					<p>Styletile Options</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cct_6.jpg" alt="" />
-					<p>Breakpoints - Homepage</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cct_7.jpg" alt="" />
-					<p>User Testing, Wireframe</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cct_8.jpg" alt="" />
-					<p>Mobile View - Homepage, Navigation</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cct_2.jpg" alt="" />
-					<p>Tablet View - Google Map</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cct_3.jpg" alt="" />
-					<div class="grid">
-						<div class="grid__item one-whole s-one-half">
-						<p>Desktop View - Destination Landing Page</p>
-							<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cct_4.jpg" alt="" />
-						</div>
-						<div class="grid__item one-whole s-one-half">
-						<p>Desktop View - Destination Detail Page</p>
-							<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cct_5.jpg" alt="" />
-						</div>
+			<div class="row isotope">
+				<div class="col-sm-12 col-md-12 col-lg-8" data-filter="website,art direction">
+					<div class="pod-work">
+						<a href="detail_google_thinkwithgoogle.html">
+							<img src="images/home_google_thinkwithgoogle.png" alt=""/>
+							<span>Think with Google</span>
+						</a>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_aucklandseashuttles.jpg" alt="" />
-		<h3>Auckland Sea Shuttles </h3>
-		<p>2013</p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Auckland Sea Shuttles</h2>
-					<hr/>
-					<p>Client: Auckland Sea Shuttles</p>
-					<p>Responsive Web Design, Information Architecture, Branding, User Testing, Interface Design</p>
-					<p><a href="http://aucklandseashuttles.co.nz/" target="_blank">Visit Website </a></p>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/ass_1.jpg" alt="" />
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/ass_2.jpg" alt="" />
-					<p>Homepage</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/ass_3.jpg" alt="" />
-					<div class="grid">
-						<div class="grid__item one-whole s-one-half">
-						<p>Trips & Services Listing Page</p>
-							<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/ass_4.jpg" alt="" />
-						</div>
-						<div class="grid__item one-whole s-one-half">
-						<p>Trips & Services Detail View</p>
-							<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/ass_5.jpg" alt="" />
-						</div>
+				<div class="col-sm-12 col-md-6 col-lg-4" data-filter="mobile,website,art direction">
+					<div class="pod-work delay-1s">
+						<a href="detail_christchurchtourism.html">
+							<img src="images/home_cct.png" alt=""/>
+							<span>Christchurch Canterbury Tourism</span>
+						</a>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_serko.jpg" alt="" />
-		<h3>Concierge Mobile Application </h3>
-		<p>2011</p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Concierge Mobile Application</h2>
-					<hr/>
-					<p>Client: Serko</p>
-					<p>Mobile Application, Interface Design, User Experience, Branding</p>
-				</div>
-				<div class="project-info__image grid__item one-whole  text--left">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/serko_1.jpg" alt="" />
-					<div class="grid">
-						<div class="grid__item one-whole m-one-half text--left">
-							<h3>The Brief</h3>
-							<p>Serko Limited is an Asia-Pacific based company that provides travel solutions and services to leading travel companies. Recognising the significance of an upwards trend in the mobile internet traffic, Serko’s founders approached Terabyte to leverage their mobile strategy. Although they had a working prototype, they need to make the application more in light with their branding and more user friendly.</p>
-							<ul>
-								<li>Following existing application framework and adopting Serko’s branding into a mobile format.</li>
-								<li>Designing templates for different mobile screen sizes </li>
-								<li>Understanding user interaction with application and applying our learnings from user testing on wireframes</li>
-								<li>Suggesting new ideas to client based on existing working prototype</li>
-							</ul>
-						</div>
-						<div class="grid__item one-whole m-one-half">
-							<h3>The Solution</h3>
-							<p>I applied my strengths in user-centric design, audience analysis, and mobile strategy to prototype a mobile application for business travellers codenamed Concierge. </p>
-							<p>Serko felt that a mobile strategy would increase engagement from their customers. From a design perspective, a higher degree of personality was required to make the app feel more personable, likeable and emotive. The resulting product was a premier corporate travelling tool that managed your itinerary, accommodation, and transport giving its users piece of mind.</p>
-						</div>
-					</div>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/serko_2.jpg" alt="" />
-					<p>Concept Design Progress</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/serko_3.jpg" alt="" />
-					<p>Templates - Homepage, Trip Listing Page, Loading Screen</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/serko_4.jpg" alt="" />
-					<div class="grid">
-						<div class="grid__item one-whole m-one-half text--left">
-							<h3>Working Progress</h3>
-							<P> This app was specifically targeted to business travellers. To make the app more interesting and unique based on the brand, I started brainstorming ideas around the 'Business Trips'. </P>
-							<P> On startup, the app presents you with a simple set of icons and business-related travel objects familiar to business travellers. This makes the app easy to use and resonates the spirit of the Serko brand.</P>
-							<P> The app allows users to personalise their experience by give them the ability to create customised wallpapers and colour palettes.</P>
-						</div>
-						<div class="grid__item one-whole m-one-half">
-							<ul>
-								<li>Loading Screen - To create a simple loading screen I designed an airplane icon that moves from bottom of phone screen and takes off to top of the screen. The runway turns itself into a business suit background.</li>
-								<li>Homepage - Provide quick access to pages. Using iconography to increase readability.</li>
-								<li>Upcoming Trips - ‘Upcoming Trips’ panel needed to be more prominent than other components on the page. Using different colour and texture and reminder icon helps user to focus on their next trip.</li>
-								<li>Trips - To contain a larger amount of content on one page, I decided to display the name of the trip, date, location and number of trip </li>
-								<li>Trips Detail - able to scan the content quickly and browse to previous & next itinerary. </li>
-							</ul>
-						</div>
-					</div>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/serko_5.jpg" alt="" />
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/serko_6.jpg" alt="" />
-					<div class="grid">
-						<div class="grid__item one-whole m-one-half text--left">
-							<h3>The Result</h3>
-							<p>The final product mixed beautiful design with a functional application that truly serves a Serko’s customer. The client was very happy not only with the features and the design, but the level of precision the application offered.</p>
-							<p>Serko are excitedly continuing development on the application.  They have showcased the prototype work to date to key clients including Microsoft and the feedback has been overwhelmingly positive.</p>
-							<p>This application design supported theming to enable instances to be branded with corporate client logos and identity.  In targeting a corporate market, the design leveraged the best of classic and contemporary within the business world.</p>
-						</div>
-						<div class="grid__item one-whole s-one-half">
-							<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/serko_7.jpg" alt="" />
-						</div>
+				<div class="col-sm-12 col-md-6 col-lg-4" data-filter="mobile,website,art direction">
+					<div class="pod-work delay-05s">
+						<a href="detail_serko.html">
+							<img src="images/placeholder.png" alt=""/>
+							<span>Serko Concierge Mobile App</span>
+						</a>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_cial.jpg" alt="" />
-		<h3>Christchurch International Airport Mobile Website </h3>
-		<p>2009</p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Christchurch International Airport Mobile Website</h2>
-					<hr/>
-					<p>Client: Christchurch International Airport</p>
-					<p>Mobile Application, Information Architecture, Interface Design</p>
-					<p><a href="http://www.christchurchairport.co.nz/" target="_blank">Visit Website </a></p>
-					<blockquote class="project-info__quote">
-						<p class="mega">As Christchurch International Airport is New Zealand’s Tourism Gateway we are committed to providing the best traveller experience possible. As a client we are very pleased with the outstanding work of Terabyte and are proud of our new mobile website.</p> 
-						</br>
-						<cite>Sam Grimwood <small>Marketing Assistant CIAL</small></cite>
-					</blockquote>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cial_1.jpg" alt="" />
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cial_2.jpg" alt="" />
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/cial_3.jpg" alt="" />
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_rosieeducation.jpg" alt="" />
-		<h3>Rosie's Education </h3>
-		<p>2013</p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Rosie's Education</h2>
-					<hr/>
-					<p>Client: DairyNZ</p>
-					<p>Interface Design, Information Architecture</p>
-					<p><a href="http://www.rosieseducation.co.nz/" target="_blank">Visit Website </a></p>
-					<blockquote class="project-info__quote">
-						<p class="mega">Terabyte were brought in after the original concept for the new site had been developed. They could have simply done what we asked, but they pushed back and came up with an alternative methodology to achieve our outcomes. They did a great job resolving the design and user experience, so we now have site that looks great, works well and will be hugely instrumental in extending and growing the use of our teaching resources.</p> </br>
-						<cite>Andrew Fraser <small>Brand Marketing Manager DairyNZ</small></cite>
-					</blockquote>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/rosieseducation_1.jpg" alt="" />
-
-					<p>Wireframe</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/rosieseducation_5.jpg" alt="" />
-
-					<p>Homepage</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/rosieseducation_2.jpg" alt="" />
-						<div class="grid">
-							<div class="grid__item one-whole s-one-half">
-							<p>Lesson Builder Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/rosieseducation_3.jpg" alt="" />
-							</div>
-							<div class="grid__item one-whole s-one-half">
-							<p>Lesson Detail on modal window</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/rosieseducation_4.jpg" alt="" />
-							</div>
-						</div>	
-				</div>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_robertharris.jpg" alt="" />
-		<h3>Robert Harris Coffee </h3>
-		<p>2011</p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Robert Harris Coffee</h2>
-					<hr/>
-					<p>Client: Cerebos New Zealand</p>
-					<p>Information Architecture, Interface Design, Flash Animation, Creative Direction</p>
-				</div>
-
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/robertharris_1.jpg" alt="" />
-
-					<p>Wireframe</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/robertharris_7.jpg" alt="" />
-
-					<p>Storyboard</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/robertharris_8.jpg" alt="" />
-
-
-					<div class="grid">
-						<div class="grid__item one-whole s-one-half">
-						<p>Homepage</p>
-							<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/robertharris_2.jpg" alt="" />
-						</div>
-						<div class="grid__item one-whole s-one-half">
-						<p>Product Listing Page</p>
-							<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/robertharris_3.jpg" alt="" />
-						</div>
-						<div class="grid__item one-whole s-one-half">
-						<p>Product Detail Page</p>
-							<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/robertharris_4.jpg" alt="" />
-						</div>
-						<div class="grid__item one-whole s-one-half">
-						<p>Generic Landing Page</p>
-							<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/robertharris_5.jpg" alt="" />
-						</div>
+				<div class="col-sm-12 col-md-6" data-filter="website,art direction">
+					<div class="pod-work delay-05s">
+						<a href="detail_axa_hub.html">
+							<img src="images/axa2.png" alt=""/>
+							<span>Financial Times | AXA Distribution Hub</span>
+						</a>
 					</div>
-
-					<p>Styleguide - Components</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/robertharris_9.jpg" alt="" />
-
-					<p>Styleguide - Grid</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/robertharris_10.jpg" alt="" />
-
 				</div>
+				<div class="col-sm-12 col-md-6" data-filter="website,art direction">
+					<div class="pod-work">
+						<a href="detail_taste_at_the_cloud.html">
+							<img src="images/home_taste.png" alt=""/>
+							<span>Taste at the cloud</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4" data-filter="illustration,art direction">
+					<div class="pod-work delay-05s">
+						<a href="detail_google_partners.html">
+							<img src="images/globe.gif" alt=""/>
+							<span>Google Partners | Banner</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-8" data-filter="website,art direction">
+					<div class="pod-work">
+						<a href="detail_google_storylab.html">
+							<img src="images/home_storylab.png" alt=""/>
+							<span>Google Story Lab</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4" data-filter="illustration">
+					<div class="pod-work delay-1s">
+						<a href="detail_google_foundry.html">
+							<img src="images/home_google_foundry.png" alt=""/>
+							<span>Google | Foundry</span>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="col-sm-12 col-md-4" data-filter="illustration,art direction">
+					<div class="pod-work">
+						<a href="detail_google_email.html">
+							<img src="images/home_google_email2.png" alt=""/>
+							<span>Google Partners | Customisable Loyalty Email</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4" data-filter="illustration,art direction">
+					<div class="pod-work delay-05s">
+						<a href="detail_google_adwords.html">
+							<img src="images/banner_adwords.png" alt=""/>
+							<span>Google AdWords</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4" data-filter="branding">
+					<div class="pod-work delay-1s">
+						<a href="detail_google_compare.html">
+							<img src="images/placeholder2.png" alt=""/>
+							<span>Google Compare Icon</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6" data-filter="illustration">
+					<div class="pod-work">
+						<a href="detail_google_cannes.html">
+							<img src="images/home_cannes2.png" alt=""/>
+							<span>Google Cannes | Cannes Palais Posters</span>
+						</a>
+					</div>
+				</div>
+				
+				
+				<div class="col-lg-1"></div>
 			</div>
-		</div>
-	</div>
-</div>
 
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_tasteatthecloud.jpg" alt="" />
-		<h3>Taste at the cloud </h3>
-		<p>2011</p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Taste at the cloud</h2>
-					<hr/>
-					<p>Client: New Zealand Trade and Enterprise</p>
-					<p>Role: Information Architecture, Interface Design, Mobile Website</p>
-					<p><a href="http://tasteatthecloud.terabyte.co.nz/" target="_blank">Visit Website </a></p>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/taste_1.jpg" alt="" />
-
-				<p>Sitemap</p>
-				<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/taste_6.jpg" alt="" />
-
-				<p>Wireframe</p>
-				<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/taste_7.jpg" alt="" />
-
-						<div class="grid">
-							<div class="grid__item one-whole s-one-half">
-							<p>Homepage</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/taste_2.jpg" alt="" />
-							</div>
-							<div class="grid__item one-whole s-one-half">
-							<p>Seaside Landing Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/taste_3.jpg" alt="" />
-							</div>
-							<div class="grid__item one-whole s-one-half">
-							<p>Recipes</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/taste_4.jpg" alt="" />
-							</div>
-							<div class="grid__item one-whole s-one-half">
-							<p>Photo gallery</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/taste_5.jpg" alt="" />
-							</div>
-						</div>	
+<!-- 
+			<div class="row">
+				<div class="col-sm-12 col-md-6" data-filter="art direction,website">
+					<div class="pod-work wp4">
+						<a href="detail_google_thinkwithgoogle.html">
+							<img src="images/home_google_thinkwithgoogle.png" alt=""/>
+							<span>Think with Google</span>
+						</a>
+					</div>
 				</div>
 
+				<div class="col-sm-12 col-md-6" data-filter="illustration,art direction">
+					<div class="pod-work wp4 delay-05s">
+						<a href="detail_google_foundry.html">
+							<img src="images/home_google_foundry.png" alt=""/>
+							<span>Google | Foundry</span>
+						</a>
+					</div>
 			</div>
-		</div>
-	</div>
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_dairyatwork.jpg" alt="" />
-		<h3>Dairy at work </h3>
-		<p>2013</p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Dairy at work</h2>
-					<hr/>
-					<p>Client: DairyNZ</p>
-					<p>Responsive Web Design, Interface Design, Branding</p>
-					<p><a href="http://www.dairyatwork.co.nz/" target="_blank">Visit Website </a></p>
+-->
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<p class="copy intro-copy wp6"><a name=about></a>Hi, I’m Lydia Bae. I’m a freelance digital designer based in London who enjoys creating innovative websites and applications. </p>
 				</div>
-				<div class="project-info__image grid__item one-whole">
-					<p class="text--left">As one of New Zealand's largest exports, the dairy sector is a large active part of the New Zealand economy. The design of the site attempts to emphasise this diversity by aggregating all news, events and industry reports into a single view which can then be filtered based on interest area. The responsive website is also categorised using colour for enhanced usability. The branding is intentionally minimal, clean and simple, so as not to be confused with the brands of contributors.</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/dairyatwork_1.jpg" alt="" />
-					<p>Wireframe</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/dairyatwork_5.jpg" alt="" />
-					<p>Styletile Options</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/dairyatwork_6.jpg" alt="" />
-					<p>Brand & Styletile</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/dairyatwork_7.jpg" alt="" />
-					<p>Mobile View</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/dairyatwork_2.jpg" alt="" />
-						<div class="grid">
+				<div class="col-xs-12 col-md-6">
+					<p class="copy additional-copy wp6 delay-05s">I am an award-winning designer who is passionate about creating meaningful and beautiful web experiences. I design digital solutions that tell a story, solve a need, educate, activate, and inspire. My intent with my designs is to take care of the user journey, help users achieve their goals, and ultimately drive business success. I specialise in art direction/interface design/user experience and have worked alongside a number of international clients. If you would like to work with me in the future, feel free to <a href="mailto:lydiakyungeun@hotmail.com">send me an email</a> or <a href="https://github.com/lydiabae/lydiabae.github.io/blob/master/content/images/media/download/CV_LydiaBae.pdf?raw=true" target="_blank"> download my cv</a>.</p>
+				</div>
 						
-							<div class="grid__item one-whole s-one-half">
-							<p>Listing Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/dairyatwork_3.jpg" alt="" />
-							</div>
-							<div class="grid__item one-whole s-one-half">
-							<p>Detail Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/dairyatwork_4.jpg" alt="" />
-							</div>
-						</div>	
+				<div class="col-xs-12 col-md-4">
+					<ul class="social wp6 delay-1s">
+						<!-- <li><a class="icon icon-twitter" href="https://twitter.com/Lydia_Bae" target="_blank"><span>Twitter</span></a></li> -->
+						<li><a class="icon icon-instagram" href="http://instagram.com/lydiabae1" target="_blank"><span>Instagram</span></a></li>
+						<li><a class="icon icon-dribbble" href="https://dribbble.com/lydiab" target="_blank"><span>Dribbble</span></a></li>
+						<li><a class="icon icon-email" href="mailto:lydiakyungeun@hotmail.com"><span>Email</span></a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
 
 
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_lindauer.jpg" alt="" />
-		<h3> Lindauer Online</h3>
-		<p> 2011 </p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Lindauer Online</h2>
-					<hr/>
-					<p>Client: Auckland Art Gallery</p>
-					<p>Interface Design</p>
-					<p><a href="http://www.lindaueronline.co.nz/" target="_blank">Visit Website </a></p>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/lindauer_1.jpg" alt="" />
-					<p>Wireframe</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/lindauer_8.jpg" alt="" />
-					<p>Concept Design Progress</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/lindauer_9.jpg" alt="" />
-					<p>Homepage</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/lindauer_2.jpg" alt="" />
-						<div class="grid">
-							<div class="grid__item one-whole s-one-half">
-							<p>Portrait Listing Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/lindauer_3.jpg" alt="" />
-							</div>
-							<div class="grid__item one-whole s-one-half">
-							<p>Portrait Detail Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/lindauer_4.jpg" alt="" />
-							</div>
-						</div>	
-				</div>
-			</div>
+		
+		<div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script src="http://isotope.metafizzy.co/isotope.pkgd.min.js"></script>
+			<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/waypoints.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/scripts.js"></script>
+			<script src="js/jquery.flexslider.js"></script>
+			<script src="js/modernizr.js"></script>
 		</div>
-	</div>
-</div>
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_mariner7.jpg" alt="" />
-		<h3> Mariner 7 Talent Manager </h3>
-		<p> 2013 </p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Mariner 7 Talent Manager </h2>
-					<hr/>
-					<p>Client: Mariner 7</p>
-					<p>Web Application, Information Architecture, Interface Design</p>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/mariner7_1.jpg" alt="" />
-
-					<p>Branding & Styletile Options</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/mariner7_4.jpg" alt="" />
-					<p>Concept Design</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/mariner7_5.jpg" alt="" />
-					<p>Components</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/mariner7_6.jpg" alt="" />
-					<p>Template Design</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/mariner7_7.jpg" alt="" />
-
-					<p>Dashboard</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/mariner7_2.jpg" alt="" />
-					<p>Individual Development Plan Page</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/mariner7_3.jpg" alt="" />
-	 			</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_realjourneys.jpg" alt="" />
-		<h3> Real Journeys Desktop/Mobile Website</h3>
-		<p> 2012 </p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Real Journeys Desktop/Mobile Website</h2>
-					<hr/>
-					<p>Client: Real Journeys</p>
-					<p>Interface Design, Information Architecture, Mobile Website, User Experience</p>
-					<p><a href="http://www.realjourneys.co.nz/" target="_blank">Visit Website </a></p>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/realjourneys_1.jpg" alt="" />
-
-					<p>Brainstorming & Ideation</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/realjourneys_7.jpg" alt="" />
-
-					<p>Wireframe</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/realjourneys_8.jpg" alt="" />
-
-					<p>Mobile Website</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/realjourneys_9.jpg" alt="" />	
-
-					<p>Mobile Website - Activity Detail Page, Booking</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/realjourneys_10.jpg" alt="" />
-
-
-					<p>Mobile View - Homepage, Destination Listing, Add-on </p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/realjourneys_2.jpg" alt="" />	
-
-					
-						<div class="grid">
-							<div class="grid__item one-whole s-one-half">
-							<p>Destination Detail Page - Gallery View</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/realjourneys_3.jpg" alt="" />
-							</div>
-							<div class="grid__item one-whole s-one-half">
-							<p>Detination Detail Page - Map View</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/realjourneys_6.jpg" alt="" />
-							</div>
-						</div>	 			
-				</div>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_goodtastecompany.jpg" alt="" />
-		<h3> The Good Taste Company</h3>
-		<p> 2011 </p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>The Good Taste Company</h2>
-					<hr/>
-					<p>Client: Heinz Watties</p>
-					<p>Information Architecture, Interface Design</p>
-					<p><a href="http://www.goodtastecompany.co.nz/" target="_blank">Visit Website </a></p>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/goodtasteco_1.jpg" alt="" />
-					<p>Homepage - About</p> 
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/goodtasteco_2.jpg" alt="" />
-					<p>Product Range, Product Detail Page</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/goodtasteco_3.jpg" alt="" />
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_borntomove.jpg" alt="" />
-		<h3> Lesmills Born to Move</h3>
-		<p> 2013 </p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Lesmills Born to Move</h2>
-					<hr/>
-					<p>Client: Lesmills International</p>
-					<p>Interface Design, Responsive Web Design</p>
-					<p><a href="http://w3.lesmills.com/borntomove" target="_blank">Visit Website </a></p>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/borntomove_1.jpg" alt="" />
-					<p>Mobile View - Navigation, Group Detail Page, Contact Form</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/borntomove_2.jpg" alt="" />
-						<div class="grid">
-							<div class="grid__item one-whole s-one-half">
-							<p>Desktop - Generic Listing Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/borntomove_3.jpg" alt="" />
-							</div>
-							<div class="grid__item one-whole s-one-half">
-							<p>Desktop - Group Detail Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/borntomove_4.jpg" alt="" />
-							</div>
-						</div>	 	
-				</div>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_essentialcuisine.jpg" alt="" />
-		<h3> Essential Cuisine</h3>
-		<p> 2011 </p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Essential Cuisine</h2>
-					<hr/>
-					<p>Client: Cerebos</p>
-					<p>Interface Design</p>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/ec_1.jpg" alt="" />
-						<div class="grid">
-							<div class="grid__item one-whole s-one-half">
-							<p>Product Listing Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/ec_3.jpg" alt="" />
-							</div>
-							<div class="grid__item one-whole s-one-half">
-							<p>Recipe Detail Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/ec_4.jpg" alt="" />
-							</div>
-						</div>	 	
-				</div>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="grid__item one-whole s-one-half m-one-third pod pod--project">
-	<div class="pod--project__thumbnail">
-		<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/project_singlesource.jpg" alt="" />
-		<h3> Monteith's Single Source</h3>
-		<p> 2011 </p>
-	</div>
-	<div class="project-info">
-		<div class="project-info__padding">
-			<div class="grid">
-				<div class="project-info__content grid__item one-whole">
-					<h2>Monteith's Single Source</h2>
-					<hr/>
-					<p>Client: Monteith's</p>
-					<p>Creative Direction, Information Architecture, Interface Design</p>
-				</div>
-				<div class="project-info__image grid__item one-whole">
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/singlesource_1.jpg" alt="" />
-
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/singlesource_2.jpg" alt="" />
-
-					<p>Brainstorming & Ideation</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/singlesource_7.jpg" alt="" />
-
-					<p>Storyboard</p>
-					<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/singlesource_6.jpg" alt="" />
-
-						<div class="grid">
-							<div class="grid__item one-whole s-one-half">
-							<p>Timeline Detail Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/singlesource_3.jpg" alt="" />
-							</div>
-							<div class="grid__item one-whole s-one-half">
-							<p>Location Map Page</p>
-								<img src="/content/images/placeholder/loading.gif" class="js-lazy-auto" data-original="/content/images/media/detail-images/singlesource_5.jpg" alt="" />
-							</div>
-						</div>	 	
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-			</div>
-		</div>
-		<!-- / projects -->
-
-		<!-- experience -->
-		<div id="experience" class="grid__item one-whole pod pod--padded">
-			<h2 class="alpha">Experience</h2>
-			<hr />
-		</div>
-		<div class="grid__item one-whole text--left pod--background pod-background--experience">
-			<h2 class="timeline-list__heading iconf-award">Awards</h2>
-			<ol class="timeline-list">
-				<li class="grid">
-	<div class="grid__item one-whole m-one-half">
-		<h3 class="flush--bottom">Taste at the Cloud</h3>
-		<p class="kilo flush--bottom text--light">2012</p>
-		<p>Webby Honoree (Lead Designer)</p>
-	</div>
-	<div class="grid__item one-whole m-one-half">
-		<p>I designed a food show event website for "Taste at the Cloud", for New Zealand Trade and Enterprise to help promote NZ food industry suppliers to local and international markets. It was selected as an Official Honoree for the 16th Annual Webby Awards in the Events Category. </p>
-
-	</div>
-</li>
-
-<li class="grid">
-	<div class="grid__item one-whole m-one-half">
-		<h3 class="flush--bottom">Christchurch International Airport Mobile Website </h3>
-		<p class="kilo flush--bottom text--light">2011</p>
-		<p>Best Awards (Lead Designer)</p>
-	</div>
-	<div class="grid__item one-whole m-one-half">
-		<p>I designed a mobile website for Christchurch International Airport and it was the first mobile website we developed at Terabyte. The website was awarded a Bronze at the Best Design Awards in the Applications category. The mobile website became one of the most useful airport websites with the ease of information display, showing flights and parking information for the airport. </p>
-	</div>
-</li>
-
-<li class="grid">
-	<div class="grid__item one-whole m-one-half">
-		<h3 class="flush--bottom">Lindauer - Auckland Art Gallery</h3>
-		<p class="kilo flush--bottom text--light">2010</p>
-		<p>Australasia Internet Best Practice Award </p>
-	</div>
-	<div class="grid__item one-whole m-one-half">
-		<p>The Lindauer website was a digital art gallery of legendary painter Gottfried Lindauer’s Maori portraits. I was proud to work on a project with tremendous cultural significance. We needed to be sensitive to Maori audience and protect the integrity of the Maori language on the website. The website was awarded a 2010 Australia and New Zealand Internet Best Practice Award in the Diversity category.</p>
-
-	</div>
-</li>
-
-<li class="grid">
-	<div class="grid__item one-whole m-one-half">
-		<h3 class="flush--bottom">Epson/NZIPP Iris Professional Photography Awards</h3>
-		<p class="kilo flush--bottom text--light">2006</p>
-		<p>Student</p>
-	</div>
-	<div class="grid__item one-whole m-one-half">
-		<p>Majoring in photography, I entered this national photography competition and won Silver and Bronze awards in the Student category.</p>
-	</div>
-</li>
-			</ol>
-			<h2 class="timeline-list__heading iconf-suitcase">Career History</h2>
-			<ol class="timeline-list">
-
-<li class="grid">
-	<div class="grid__item one-whole m-one-half">
-		<h3 class="flush--bottom">Freelance</h3>
-		<p class="kilo text--light">January 2014 – Present </p>
-	</div>
-	<div class="grid__item one-whole m-one-half">
-	<h5>Freemarven </h5> <p> Branding - Visual identity, illustration</p>
-	<h5>DDB Remedy</h5> <p> Website</p>
-	</div>
-</li>
-
-
-<li class="grid">
-	<div class="grid__item one-whole m-one-half">
-		<h3 class="flush--bottom">Phantom Studios, London</h3>
-		<p class="kilo flush--bottom text--light">February 2014 – August 2014 (6 months) </p>
-		<p>Senior Designer</p>
-	</div>
-	<div class="grid__item one-whole m-one-half">
-	<h5> Clients </h5> <p>Google UK, <a href="http://axadistributionhub.ftadviser.com/" target="_blank"> Financial Times </a> </p><p> Interface design, Storyboard Illustration, Application, Flash banner, Email Newsletter, Website</p>
-
-	</div>
-</li>
-
-
-<li class="grid">
-	<div class="grid__item one-whole m-one-half">
-		<h3 class="flush--bottom">Terabyte Interactive</h3>
-		<p class="kilo flush--bottom text--light">April 2007 – January 2014 (6 years 10 months)</p>
-		<p>Senior Designer</p>
-	</div>
-	<div class="grid__item one-whole m-one-half">
-	<h5>Clients</h5> <p>Auckland Art Gallery, DairyNZ, New Zealand Trade and Enterprise, Les Mills International Ltd, Christchurch International Airport, Heinz Watties </p>
-
-	<h5>Responsible for</h5> <p>Information Architecture, Brainstorming, Interface design, User experienced design, Responsive design, Mobile/Web Application, Art Direction, Storyboarding, Branding, User testing, Mentoring junior designers </p>
-		 <!-- <p>As a senior designer for one of the oldest and most reputable web design agencies in New Zealand, I was responsible for:</p>
-		 <ul >
-			<li>Helping to develop an iterative approach to designing responsive websites at Terabyte. This involved a lot of research and collaboration with our front end team. </li>
-			<li>Rapid prototyping - working directly with developers to iterating quickly on new concepts and ideas</li>
-			<li>Audience analysis, user flows and interaction design</li>
-			<li>Discovery workshop participation</li>
-			<li>Brainstorming/ideation</li>
-			<li>User-centered design</li>
-			<li>Information architecture and wireframes</li>
-			<li>Design reviews</li>
-			<li>Website browser and functionality testing</li>
-			<li>Brand development</li>
-			<li>Creating visual designs, including typography, concept, branding and templates</li>
-			<li>Client presentation</li>
-			<li>Mentoring other designers </li>
-		</ul> -->
-	</div>
-</li>
-<li class="grid">
-	<div class="grid__item one-whole m-one-half">
-		<h3 class="flush--bottom">Freelance Designer</h3>
-		<p class="kilo text--light">January 2011 – 2014 </p>
-	</div>
-	<div class="grid__item one-whole m-one-half">
-	<h5>Auckland Sea Shuttles </h5> <p> Responsive Web Design</p>
-	<h5>Stray Travel</h5> <p> Mobile Website, Reponsive Web Design</p>
-	<h5>Competenz </h5> <p> Responsive Web Design</p>
-	<h5>Haka Tours </h5> <p> Information architecture, Website Enhancement for Tour Page</p>
-	<h5>Hallertau </h5> <p> Newsletter, Brochure Design</p>
-	</div>
-</li>
-<li class="grid">
-	<div class="grid__item one-whole m-one-half">
-		<h3 class="flush--bottom">gardyneHOLT</h3>
-		<p class="kilo flush--bottom text--light">February 2007 – March 2007 (2 months)</p>
-		<p>Graphic Design Internship</p>
-	</div>
-	<div class="grid__item one-whole m-one-half">
-	</div>
-</li>
-			</ol>
-		</div>
-		<!-- /experience -->
-	</div>
-</div>
-
-<!-- contact -->
-<div class="contact-container">
-<div class="master-wrapper">
-	<div id="contact" class="pod pod--contact text--center">	
-		<img class="pod--contact__mugshot" src="/content/images/media/lydiabaefooter.jpg" alt="Lydia Bae" />
-		<!-- <hr/>
-		<p class="mega pod--contact__faded">Would you like to work with me? Feel free to drop me a line and I'll be happy to reply asap.</p> -->
-
-		<p class="mega text--spaced">
-			<a href="mailto:lydiabae83@gmail.com">Get in touch</a> <br/>
-			<!-- http://geek.michaelgrace.org/2010/03/create-html-link-that-starts-a-skype-call/ -->
-			<!-- Skype: <a href="skype:LydiaBae?call">LydiaBae</a> -->
-		</p>
-		<br/>
-		<a class="btn" href="https://github.com/lydiabae/lydiabae.github.io/blob/master/content/images/media/download/CV_LydiaBae.pdf?raw=true" target="_blank">Download CV</a>
-		<br/>
-		<!-- <h2 class="pod--contact__follow-heading pod--contact__faded">Follow</h2>
-		 <ul class="social-links list-inline">
-			<li>
-				<a class="social-twitter iconf-twitter" href="https://twitter.com/lydia_bae">
-					<span class="iconf__text">twitter</span>
-				</a>
-			</li>
-			<li>
-				<a class="social-linkedin iconf-linkedin" href="http://www.linkedin.com/in/lydiabae">
-					<span class="iconf__text">linkedin</span>
-				</a>
-			</li>
-		</ul> -->
-	</div>
-</div>
-</div>
-<!-- / contact -->
-	<!-- Footer Styles -->
-
-	<script src="/content/scripts/src/paths.js"></script>
-<script>
-	require.config({
-		baseUrl: "/content/scripts/src/lib"
-	});
-	require(["/content/scripts/src/main.js"], function () {
-		require(["app/page/all"]);
-	});
-</script>
-</body>
+	</body>
 </html>
