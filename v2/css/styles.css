@@ -629,10 +629,17 @@ header a span {
 	}
 }
 .intro-content p {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: lighter;
 	line-height: 26px;
 	margin-bottom: 20px;
+}
+
+.intro-content a {
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 
 .intro-content img {
