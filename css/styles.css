@@ -911,7 +911,8 @@ header a span {
 
 .detail-quote {
 	padding: 40px 80px;
-	font-size: 28px;
+	font-size: 25px;
+
 	text-align: center;
 	font-weight: lighter;
 }
@@ -927,6 +928,16 @@ header a span {
 }
 .detail-quote p {
 	margin: -30px 0 0;
+		font-weight: 300;
+}
+
+
+@media screen and (max-width: 500px) {
+	.detail-quote {
+		padding: 40px 40px;
+		font-size: 20px;
+		font-weight: 300;
+	}
 }
 
 .btns {
