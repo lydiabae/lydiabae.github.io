@@ -94,6 +94,12 @@ body {
 .overview-googleemail h4 {
 	color: #fff !important; 
 }
+.overview-googleemail h2 {
+	color: #c1e1ef !important; 
+}
+.overview-googleemail li {
+	color: #c1e1ef !important; 
+}
 .overview-googleemail p {
 	color: #c1e1ef; 
 }
@@ -117,6 +123,12 @@ body {
 .overview-partners h4 {
 	color: #fff !important;
 }
+.overview-partners h2 {
+	color: #fff !important;
+}
+.overview-partners li {
+	color: #fff !important;
+}
 .overview-partners p {
 	color: #fff !important;
 }
@@ -131,6 +143,12 @@ body {
 .overview-cannes h4{
 	color: #fff !important; 
 }
+.overview-cannes h2{
+	color: #20AFCD !important; 
+}
+.overview-cannes li{
+	color: #20AFCD !important; 
+}
 .overview-cannes p{
 	color: #20AFCD;
 }
@@ -138,10 +156,22 @@ body {
 .overview-thinkgoogle {
 	background-color: #00bcd5;
 }
+.overview-thinkgoogle .detail-copy:after{
+	visibility: hidden;
+}
 
 .overview-thinkgoogle h4{
 	color: #fff !important; 
 }
+
+.overview-thinkgoogle h2{
+	color: #fff !important; 
+}
+
+.overview-thinkgoogle li{
+	color: #fff !important; 
+}
+
 .overview-thinkgoogle p{
 	color: #fff;
 }
@@ -164,6 +194,7 @@ body {
 	background-color: #ffefcf;
 }
 
+
 .overview-cct h4{
 	color: #a41800 !important; 
 }
@@ -182,6 +213,50 @@ body {
 	background-color: #574742 ;
 	color: #ffefcf;
 }
+
+.overview-dairynz {
+	background-color: #a1c53f;
+}
+
+.overview-dairynz h4 {
+	color: #fff !important;
+}
+.overview-dairynz h2 {
+	color: #fff !important;
+}
+.overview-dairynz li {
+	color: #fff !important;
+}
+.overview-dairynz p {
+	color: #fff;
+}
+
+.overview-dairynz .detail-copy:after {
+	background-color: #fff;
+}
+
+.overview-dairynz .btns a {
+	color: #fff;
+	border: solid #fff 2px;
+}
+
+.overview-dairynz .btns a:hover {
+	background-color: #ffffff;
+	color: #a1c53f;
+}
+
+.overview-dairynz2 {
+	background-color: #21262b;
+}
+
+.overview-dairynz2 h4 {
+	color: #fff !important;
+}
+.overview-dairynz2 p {
+	color: #fff !important;
+}
+
+
 
 
 .container {
@@ -820,9 +895,10 @@ header a span {
 .detail-copy {
 	position: relative;
 	z-index: 250;
-	padding: 50px 120px 70px;
+	padding: 40px 120px 40px;
 	text-align: center;
 	margin:10px 0 10px;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 991px) {
@@ -831,6 +907,7 @@ header a span {
 	}
 }
 
+/*
 .detail-copy:after {
 	content: '';
 	position: absolute;
@@ -841,15 +918,16 @@ header a span {
 	left: 50%;
 	margin-left: -58px;
 	background-color: #000;
+
 }
+*/
 
 .detail-copy h2 {
 	font-size: 12px;
-	line-height: 20px;
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	color: #555;
+	color: #000;
 }
 
 .detail-copy h4 {
@@ -859,8 +937,11 @@ header a span {
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	color: #333;
-	padding-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
+
+
 
 .detail-copy p {
 	font-family: Roboto;
@@ -881,6 +962,7 @@ header a span {
 	padding-left: 0;
 }
 
+
 .detail-copy li {
 	font-family: Roboto;
 	font-weight: 300;
@@ -889,9 +971,31 @@ header a span {
 	color: #333;
 }
 
+@media screen and (max-width: 450px) {
+	.detail-copy li {
+	font-size: 17px;
+	line-height: 35px;
+	}
+}
+
 .detail-images {
 }
 
+.col-sm-9 p{
+	margin-right: 40px;
+}
+
+.col-sm-3 h2{
+	text-align: left;
+}
+.col-sm-3 ul {
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.col-sm-3 li {
+	margin-bottom: 3px;
+}
 
 
 @media screen and (max-width: 991px) {
