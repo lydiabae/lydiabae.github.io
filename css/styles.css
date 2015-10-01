@@ -357,19 +357,6 @@ header a span {
 	letter-spacing: 1px;
 }
 
-@media screen and (max-width: 500px) {
-	.work-filter li {
-		display:  block;
-		background-color: white;
-		padding: 5px;
-		margin: 0 0 5px;
-	}
-	.work-filter li:before {
-		content: '';
-	}
-}
-
-
 .work-filter li:hover {
 	text-decoration: line-through;
 } 
@@ -391,6 +378,17 @@ header a span {
 	content: none;
 }
 
+@media screen and (max-width: 500px) {
+	.work-filter li {
+		display:  block;
+		background-color: white;
+		padding: 5px;
+		margin: 0 0 5px;
+	}
+	.work-filter li:before {
+		content: '';
+	}
+}
 /** WORK POD */
 
 .pod-work {
@@ -595,7 +593,7 @@ header a span {
 /** DETAIL PAGE */
 .header {
 	position: fixed;
-	z-index: 3;
+	z-index: 20;
 	left: 0;
 	right: 0;
 	padding: 0 45px;
@@ -663,7 +661,7 @@ header a span {
 	background-image: url("../images/home_hero.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: 0 70px; 
+	background-position: right 70px; 
 	background-color: #29304b;
 }
 
@@ -707,8 +705,28 @@ header a span {
 .hero-logo-dark a:before, .hero-logo-dark a:after {
 	 color: #2bfecd;
 }
+@media screen and (max-width: 800px) {
+	.hero_home .intro {
+		position: relative;
+	}
+	.hero_home .intro:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(41,48,75,.7);
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+	.hero_home .intro-content {
+		position: relative;
+		z-index: 10;
+	}
+}
 
-
+	
 
 @media screen and (max-width: 500px) {
 	.hero-logo a:before {
@@ -770,7 +788,7 @@ header a span {
 	display: block;
 	margin: auto;
 	min-height: 700px;
-	overflow: visible;
+	overflow: hidden;
 }
 
 .intro-content {

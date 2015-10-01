@@ -75,7 +75,7 @@ $(document).ready(function() {
 				var filterType = $(this).text().toLowerCase();
 				$filters.removeClass('selected');
 				$(this).addClass('selected');
-				if (filterType !== 'all') {
+				if (filterType !== 'all types') {
 					var selector = '[data-filter*="' + filterType + '"]';
 					$container.isotope({ filter: selector });
 				} else {
