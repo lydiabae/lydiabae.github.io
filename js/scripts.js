@@ -110,9 +110,19 @@ $(function() {
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 			if (target.length) {
-				$('html,body').animate({
-					scrollTop: target.offset().top
-				}, 2000);
+
+				var $header = $('.header');
+
+				// console.log(document.body.scrollTop);
+
+				var distance = Math.min(Math.abs(parseInt(target.offset().top - $header.height()) - document.body.scrollTop), 1200);
+
+				// console.log('scrolling', distance);
+
+				$('html,body').animate(
+				{
+					scrollTop: (target.offset().top - $header.height()) + 'px'
+				}, distance);
 				return false;
 			}
 		}
