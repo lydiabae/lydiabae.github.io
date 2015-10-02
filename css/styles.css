@@ -281,8 +281,8 @@ body {
 @media screen and (max-width: 500px) {
 .container-text
 	{
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
 		
 	}
 }
@@ -521,8 +521,8 @@ header a span {
 }
 @media screen and (max-width: 500px) {
 	.intro-copy {
-		font-size: 24px;
-		line-height: 36px;
+		font-size: 22px;
+		line-height: 33px;
 		font-weight: 300;
 	}
 }
@@ -800,9 +800,16 @@ header a span {
 }
 
 
+@media screen and (max-width: 800px) {
+.intro-content{
+	padding: 180px 70px 120px;
+
+	}
+}
+
 @media screen and (max-width: 600px) {
 .intro-content{
-	padding: 250px 50px 120px;
+	padding: 200px 70px 120px;
 
 	}
 }
@@ -810,8 +817,7 @@ header a span {
 
 @media screen and (max-width: 500px) {
 .intro-content{
-	padding: 250px 70px 120px;
-
+	padding: 150px 40px 120px;
 	}
 }
 
