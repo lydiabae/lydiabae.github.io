@@ -268,7 +268,7 @@ body {
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 670px) {
 .container-text
 	{
 	padding-left: 60px;
@@ -615,7 +615,7 @@ header a span {
 }
 
 .nav{
-	padding: 35px 40px;
+	padding: 35px 20px;
 	background: #fff;
 	float: right;
 }
@@ -640,6 +640,13 @@ header a span {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
+}
+
+@media screen and (max-width:320px) {
+	.nav li {
+		font-size: 15px;
+		padding-right: 15px;
+	}
 }
 
 .nav .selected {
