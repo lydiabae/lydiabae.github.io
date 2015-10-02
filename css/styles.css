@@ -1088,7 +1088,7 @@ header a span {
 	background-image: url("../images/home_footer.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center; 
+	background-position: center bottom; 
 	background-color: #29304b;
 }
 
@@ -1106,7 +1106,7 @@ header a span {
 	display: block;
 	margin: auto;
 	min-height: 700px;
-	overflow: visible;
+	overflow: hidden;
 
 }
 
