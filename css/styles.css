@@ -604,7 +604,7 @@ header a span {
 
 @media screen and (max-width: 550px) {
 .header{
-	padding: 0 0 0 45px;
+	padding: 0 0 0 20px;
 	}
 }
 
@@ -622,7 +622,7 @@ header a span {
 
 @media screen and (max-width: 550px) {
 .nav {
-	padding: 35px 0px 35px 40px;
+	padding: 35px 0px 35px 0px;
 	}
 }
 
@@ -730,7 +730,7 @@ header a span {
 
 @media screen and (max-width: 500px) {
 	.hero-logo a:before {
-		font-size: 25px;
+		font-size: 28px;
 	}
 }
 .hero-logo span {
@@ -1089,6 +1089,7 @@ header a span {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center; 
+	background-color: #29304b;
 }
 
 .footer img {
