@@ -79,7 +79,7 @@
 }
 
 body {
-	font-family: 'Raleway';
+	font-family: 'Source Sans Pro';
 	
 }
 
@@ -322,6 +322,13 @@ header a span {
 	display: none;
 }
 
+
+
+.contentbg {
+	background-color: #fff;
+	margin-bottom: 100px;
+}
+
 /** WORK FILTER */
 .work-filter {
 	display: block;
@@ -506,10 +513,10 @@ header a span {
 }
 
 .intro-copy {
-	color: #000;
-	font-size: 31px;
-	line-height: 42px;
-	font-weight: 300;
+	color: #1c2340;
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: 400;
 }
 
 @media screen and (max-width: 991px) {
@@ -535,7 +542,7 @@ header a span {
 	font-weight: 400;
 	line-height: 29px;
 	color: #2d2e30;
-	margin-bottom: 120px;
+	margin-bottom: 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -553,14 +560,15 @@ header a span {
 
 .additional-copy a:hover {
 	text-decoration: underline;
-	color: #916a70;
+	color: #12e06c;
 }
 
 .social {
 	display: block;
-	max-width: 1000px;
+	/* max-width: 1000px; */
 	margin: auto;
-	text-align: center;
+	text-align: left;
+	padding-left: 0px;
 }
 .social li,
 .social a {
@@ -570,7 +578,7 @@ header a span {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	display: inline-block;
-	color: #fff;
+	color: #12e06c;
 	margin-right: 15px;
 	margin-top: 10px;
 	cursor: pointer;
@@ -579,8 +587,8 @@ header a span {
 }
 
 .social a:hover {
-	color: #8ba3d1;
-	text-decoration: line-through;
+	color: #12e06c;
+	text-decoration: underline;
 }
 
 @media screen and (max-width: 991px) {
@@ -596,8 +604,8 @@ header a span {
 	z-index: 20;
 	left: 0;
 	right: 0;
-	padding: 0 45px;
-	background: #fff;
+	/* padding: 0 45px; */
+	background: #1c2340;
 	top: 0;
 }
 
@@ -616,7 +624,7 @@ header a span {
 
 .nav{
 	padding: 35px 20px;
-	background: #fff;
+	/* background: #fff; */
 	float: right;
 }
 
@@ -632,7 +640,7 @@ header a span {
 
 .nav li {
 	font-family: 'Source Sans Pro';
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	color: #000;
 	text-transform: uppercase;
@@ -654,11 +662,12 @@ header a span {
 }
 
 .nav a {
-	color: #000;
+	color: #fff;
 }
 
 .nav a:hover {
-	text-decoration: line-through;
+	color: #12e06c;
+	text-decoration: none;
 	transition: all ease-in-out .3s;
 	-webkit-transition: all ease-in-out .3s;
 }
@@ -668,9 +677,20 @@ header a span {
 	background-image: url("../images/home_hero.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: right 70px; 
-	background-color: #29304b;
+	background-position: right 50px;
+	background-color: #1c2340;
 }
+
+
+/*
+@media screen and (max-width:800px) {
+	.hero_home {
+	background-position: 250px 20px;
+	}
+}
+
+*/
+
 
 .hero img {
 	width: 100%;
@@ -686,12 +706,13 @@ header a span {
 
 .hero-logo a:after {
 	text-decoration: none;
-	content: "\e608";
+	content: "\e60a";
 	opacity: 0;
 }
 
 .hero-logo a:hover:after {
 	opacity: 1;
+	color: #12e06c;
 }
 .hero-logo a:hover:before {
 	opacity: 0;
@@ -703,8 +724,8 @@ header a span {
 	top: 33px;
 	left: 12px;
 	display: inline-block;
-	color: #000;
-	font-size: 28px;
+	color: #2b324d;
+	font-size: 40px;
 	transition: all ease-in-out .3s;
 	-webkit-transition: all ease-in-out .3s;
 }
@@ -722,7 +743,7 @@ header a span {
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: rgba(41,48,75,.7);
+		background: rgba(28,35,64,.7);
 		width: 100%;
 		height: 100%;
 		z-index: 0;
@@ -794,12 +815,13 @@ header a span {
 	position: relative;
 	display: block;
 	margin: auto;
-	min-height: 700px;
+	min-height: 800px;
 	overflow: hidden;
 }
 
 .intro-content {
-	padding: 250px 120px 120px;
+	/* padding: 160px 660px 120px 140px; */
+	padding: 160px 200px 120px 200px;
 	width: 100%;
 	max-width: 1000px;
 	margin: auto;
@@ -809,14 +831,14 @@ header a span {
 
 @media screen and (max-width: 800px) {
 .intro-content{
-	padding: 180px 70px 120px;
+	padding: 100px 150px 120px;
 
 	}
 }
 
 @media screen and (max-width: 600px) {
 .intro-content{
-	padding: 200px 70px 120px;
+	padding: 120px 70px 120px;
 
 	}
 }
@@ -824,23 +846,24 @@ header a span {
 
 @media screen and (max-width: 500px) {
 .intro-content{
-	padding: 150px 40px 120px;
+	padding: 100px 40px 120px;
 	}
 }
 
 .intro-content h2{
-	font-family: "Playfair Display";
-	font-size: 45px;
-	line-height: 56px;
-	font-weight: lighter;
+	font-family: "Roboto";
+	font-size: 55px;
+	line-height: 65px;
+	font-weight: 300;
+	/* font-weight: lighter; */
 	margin-bottom: 26px;
-	color: #fff;
+	color: #ffffff;
 	text-align: center;
 	margin-right: auto;
 }
 
 .intro .highlight{
-	color: #ad9571;
+	color: #2cfdc9;
 }
 
 
@@ -862,15 +885,52 @@ header a span {
 
 .intro-content h4 {
 	font-family: 'Source Sans Pro';
-	font-size: 13px;
+	font-size: 230px;
 	font-weight: 700;
-	color: #fff;
+	color: #12e06c;
 	text-transform: uppercase;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+
+@media screen and (max-width: 990px) {
+	.intro-content h4 {
+	font-size: 200px;
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.intro-content h4 {
+	font-size: 180px;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+	.intro-content h4 {
+	font-size: 160px;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.intro-content h4 {
+	font-size: 160px;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+	.intro-content h4 {
+	font-size: 120px;
+	}
+}
+
+/*
 .intro-content h4:after{
 	content: '';
 	position: absolute;
@@ -883,27 +943,30 @@ header a span {
 	margin-left: -75px;
 }
 
+*/
+
 .intro-content p{
 	font-family: 'Source Sans Pro';
-	font-size: 21px;
+	font-size: 23px;
 	font-weight: lighter;
-	line-height: 29px;
+	line-height: 30px;
 	color: #fff;
-	text-align: center;
+	text-align: left;
 	/* margin-left: auto; */
 	margin-right: auto;
+	padding-left: 15px;
 }
 
 .intro-content a {
-	color: #fff;
+	color: #12e06c;
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 .intro-content a:hover {
-	color: #8ba3d1;
-	text-decoration: line-through;
+	color: #12e06c;
+	text-decoration: underline;
 	transition: all ease-in-out .3s;
 	-webkit-transition: all ease-in-out .3s;
 }
@@ -1125,12 +1188,12 @@ header a span {
 }
 
 .about-content h2{
-	font-family: "Playfair Display";
+	font-family: "Source Sans Pro";
 	font-size: 45px;
 	line-height: 56px;
-	font-weight: lighter;
+	font-weight: 600;
 	margin-bottom: 26px;
-	color: #fff;
+	color: #000;
 	text-align: center;
 	margin-right: auto;
 	padding: 0 50px;
@@ -1155,7 +1218,7 @@ header a span {
 
 .about-content p{
 	font-family: "Source Sans Pro";
-	color: #fff;
+	color: #000;
 	font-size: 18px;
 	font-weight: lighter;
 	line-height: 28px;
@@ -1166,7 +1229,7 @@ header a span {
 }
 
 .about-content a {
-	color: #fff;
+	color: #000;
 	color: #8ba3d1;
 }
 .about-content a:hover {
