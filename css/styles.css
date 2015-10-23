@@ -714,14 +714,14 @@ header a span {
 }
 
 
-/*
-@media screen and (max-width:800px) {
+
+@media screen and (max-width:500px) {
 	.hero_home {
-	background-position: 250px 20px;
+	background-position: left 50px;
+	background-color: #1c2340;
 	}
 }
 
-*/
 
 
 .hero img {
