@@ -698,7 +698,7 @@ header a span {
 	background-image: url("../images/home_hero.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: right 50px;
+	/* background-position: right 50px; */
 	background-color: #1c2340;
 }
 
@@ -1034,8 +1034,8 @@ header a span {
 
 
 .detail-copy p {
-	font-family: Roboto;
-	font-size: 18px;
+	font-family: Source Sans Pro;
+	font-size: 20px;
 	font-weight: 300;
 	line-height: 30px;
 	padding-top: 10px;
