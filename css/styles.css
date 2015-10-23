@@ -695,17 +695,8 @@ header a span {
 
 
 
-.hero {
-	position: relative;
-	background-image: url("../images/home_hero.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: right 50px;
-	background-color: #1c2340;
-}
-
 .hero_home {
-	position: relative;
+
 	background-image: url("../images/home_hero.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
