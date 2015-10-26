@@ -255,6 +255,23 @@
 }
 
 
+.overview-dulux {
+	background-color: #203a8e;
+}
+
+.overview-dulux h4 {
+	color: #ec2f8b !important;
+}
+.overview-dulux h2 {
+	color: #fff !important;
+}
+.overview-dulux li {
+	color: #fff !important;
+}
+.overview-dulux p {
+	color: #fff;
+}
+
 .container {
 	max-width: 1000px;
 }
@@ -344,6 +361,11 @@
 .row {
 	margin: 0;
 	width: 100%;
+}
+
+.row p {
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
 }
 
 
@@ -766,10 +788,10 @@
 .hero-logo a:before, .hero-logo a:after {
 	position: absolute;
 	z-index: 10;
-	top: 33px;
-	left: 12px;
+	top: 30px;
+	left: 50px;
 	display: inline-block;
-	color: #2b324d;
+	color: rgba(1,1,1,10);
 	font-size: 40px;
 	transition: all ease-in-out .3s;
 	-webkit-transition: all ease-in-out .3s;
@@ -804,6 +826,8 @@
 @media screen and (max-width: 500px) {
 	.hero-logo a:before {
 		font-size: 28px;
+		top: 30px;
+		left: 30px;
 	}
 }
 .hero-logo span {
