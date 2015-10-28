@@ -555,7 +555,7 @@
 .pod-work a {
 	position: relative;
 	display: block;
-	background-color: #1d1633;
+	background-color: #1c2340;
 }
 
 .pod-work span {
@@ -791,7 +791,7 @@
 	top: 30px;
 	left: 50px;
 	display: inline-block;
-	color: rgba(1,1,1,10);
+	color: rgba(255,255,255,10);
 	font-size: 40px;
 	transition: all ease-in-out .3s;
 	-webkit-transition: all ease-in-out .3s;
