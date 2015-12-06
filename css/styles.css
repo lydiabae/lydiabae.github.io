@@ -272,6 +272,35 @@
 	color: #fff;
 }
 
+
+
+.overview-mariner {
+	background-color: #66c5a6;
+}
+
+
+.overview-mariner2 {
+	background-color: #eeeeee;
+}
+
+
+.overview-mariner h4 {
+	color: #ffffff !important;
+}
+.overview-mariner h2 {
+	color: #fff !important;
+}
+.overview-mariner li {
+	color: #fff !important;
+}
+.overview-mariner p {
+	color: #fff;
+}
+
+
+
+
+
 .container {
 	max-width: 1000px;
 }
@@ -361,6 +390,8 @@
 .row {
 	margin: 0;
 	width: 100%;
+	padding-bottom: 50px;
+	padding-top: 50px;
 }
 
 .row p {
@@ -1084,7 +1115,7 @@
 .detail-copy p {
 	font-family: 'Source Sans Pro';
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 30px;
 	padding-top: 10px;
 	text-align: left;
@@ -1132,7 +1163,7 @@
 .detail-copy li {
 	font-family: 'Source Sans Pro';
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 400;
 	margin-bottom: 10px;
 	color: #333;
 }
@@ -1396,5 +1427,73 @@
 }
 
 
+.description-right {
+	font-family: 'Source Sans Pro';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 0px;
+	padding-left: 50px;
+}
+
+.description-left {
+	font-family: 'Source Sans Pro';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 0px;	
+	padding-right: 50px;
+}
+.decription-title-right {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: #333;
+	padding-bottom: 10px;
+	padding-left: 50px;
+}
 
 
+.decription-title-left {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: #333;
+	padding-bottom: 10px;
+}
+
+.responsive-logo {
+	position: relative;
+
+	background-image: url("../images/dulux-large.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 277px;
+	margin: auto;
+
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+	.responsive-logo {
+	background-image: url("../images/dulux-default.png");
+	}
+}
+
+
+@media screen and (max-width: 880px) {
+	.responsive-logo {
+	background-image: url("../images/dulux-medium.png");
+	}
+}
+
+
+@media screen and (max-width: 620px) {
+	.responsive-logo {
+	background-image: url("../images/dulux-small.png");
+	}
+}
