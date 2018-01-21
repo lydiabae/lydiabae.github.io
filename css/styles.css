@@ -405,7 +405,7 @@
 	z-index: 20;
 	left: 0;
 	right: 0;
-	background: #1c2340;
+	background-color: rgba(0, 0, 0, 0.1);
 	top: 0;
 }
 
@@ -772,11 +772,12 @@
 
 .hero_home {
 	position: relative;
-	background-image: url("../images/home_hero.png");
+	/**background-image: url("../images/home_hero.png");**/
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: right 50px;
-	background-color: #1c2340;
+	background-color: #000000;
+	/**background-color: #1c2340;**/
 }
 
 
@@ -784,7 +785,7 @@
 @media screen and (max-width:500px) {
 	.hero_home {
 	background-position: left 50px;
-	background-color: #1c2340;
+	background-color: #000000;
 	}
 }
 
@@ -1496,4 +1497,46 @@
 	.responsive-logo {
 	background-image: url("../images/dulux-small.png");
 	}
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /*background: #000;*/
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
 }
